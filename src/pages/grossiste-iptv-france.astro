@@ -29,7 +29,8 @@ const phone = "212782389820";
     <meta name="twitter:description" content="Le grossiste IPTV B2B de référence en France. Panels Xtream UI, crédits en gros, 7 serveurs premium, support WhatsApp. 120+ revendeurs actifs." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
     <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org",
@@ -86,7 +87,7 @@ const phone = "212782389820";
 
     <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B0F19]/60 backdrop-blur-2xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" class="text-xl font-black tracking-tighter text-white"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-7 w-auto" /></a>
+        <a href="/" class="text-xl font-black tracking-tighter text-white"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" /></a>
         <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-400">
           <a href="/" class="hover:text-white transition-colors duration-200">Accueil</a>
           <a href="/serveurs" class="hover:text-white transition-colors duration-200">Serveurs</a>
@@ -335,7 +336,7 @@ const phone = "212782389820";
       <div class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div class="col-span-2 md:col-span-1">
-            <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+            <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
             <p class="text-slate-600 text-xs mt-3 leading-relaxed max-w-[200px]">Le partenaire B2B de confiance pour les revendeurs IPTV. Infrastructure premium, marges maximisées et support dédié 24/7.</p>
           </div>
           <div>
@@ -381,7 +382,7 @@ const phone = "212782389820";
       <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
       <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
         <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
-          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
           <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Fermer le menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
