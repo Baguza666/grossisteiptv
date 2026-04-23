@@ -1,0 +1,373 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <title>À Propos | Grossiste IPTV B2B — Notre Mission & Infrastructure</title>
+        <meta
+            name="description"
+            content="Découvrez qui nous sommes : l'histoire, l'infrastructure et les valeurs derrière Grossiste IPTV, le partenaire B2B de confiance de plus de 120 revendeurs IPTV en Europe et au Maghreb."
+        />
+        <link rel="canonical" href="https://grossisteiptv.com/a-propos/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://grossisteiptv.com/a-propos/" />
+        <meta property="og:title" content="À Propos | Grossiste IPTV B2B — Notre Mission & Infrastructure" />
+        <meta property="og:description" content="Découvrez qui nous sommes : l'histoire, l'infrastructure et les valeurs derrière Grossiste IPTV, le partenaire B2B de confiance de plus de 120 revendeurs." />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="À Propos | Grossiste IPTV B2B" />
+        <meta name="twitter:description" content="Découvrez l'histoire et l'infrastructure derrière Grossiste IPTV. Le partenaire de confiance de plus de 120 revendeurs actifs." />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    </head>
+    <body
+        class="bg-slate-950 text-white font-sans antialiased min-h-screen flex flex-col"
+    >
+        <header
+            class="w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50"
+        >
+            <div
+                class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between"
+            >
+                <a href="/" class="flex items-center"
+                    ><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-7 w-auto" /></a
+                >
+                <nav
+                    class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300"
+                >
+                    <a href="/" class="hover:text-white transition-colors">Accueil</a>
+                    <a href="/serveurs" class="hover:text-white transition-colors">Nos Serveurs</a>
+                    <div class="relative group">
+                      <button class="flex items-center gap-1 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-0 p-0 text-sm font-medium text-slate-300">
+                        Guides
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200 group-hover:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                      </button>
+                      <div class="absolute top-full left-1/2 -translate-x-1/2 min-w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+                        <div class="pt-3">
+                          <div class="bg-[#0D1117] border border-white/10 rounded-xl p-5 shadow-2xl grid grid-cols-2 gap-5">
+                            <div>
+                              <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-3">Comprendre l'IPTV</p>
+                              <div class="space-y-2.5">
+                                <a href="/qu-est-ce-qu-un-panel-iptv" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Qu'est-ce qu'un Panel IPTV ?</a>
+                                <a href="/xtream-ui-panel-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Xtream UI Panel Revendeur</a>
+                                <a href="/guide-panel-iptv-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Guide Panel Revendeur</a>
+                              </div>
+                            </div>
+                            <div>
+                              <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-3">Devenir Revendeur</p>
+                              <div class="space-y-2.5">
+                                <a href="/comment-devenir-revendeur-iptv" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Devenir Revendeur IPTV</a>
+                                <a href="/meilleur-panel-iptv-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Meilleur Panel IPTV 2026</a>
+                                <a href="/credits-iptv-en-gros" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Crédits IPTV en Gros</a>
+                                <a href="/grossiste-iptv-france" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Grossiste IPTV France</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="/a-propos" class="text-indigo-400">À Propos</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Ouvrir le menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex-grow w-full">
+
+            {/* ── Hero ── */}
+            <section class="max-w-4xl mx-auto px-4 py-20 text-center reveal">
+                <p class="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4">Notre Histoire</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                    Notre Mission : <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400"
+                        >Sécuriser votre Business IPTV</span>
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+                    Le marché de l'IPTV regorge de fournisseurs amateurs qui disparaissent du jour au lendemain, laissant leurs revendeurs sans solution et leurs clients sans service. Nous avons construit Grossiste IPTV pour changer ça : une plateforme B2B fiable, stable et ultra-rentable, pensée exclusivement pour les professionnels de la revente.
+                </p>
+            </section>
+
+            {/* ── Stats ── */}
+            <section class="max-w-4xl mx-auto px-4 pb-16">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl text-center reveal">
+                        <div class="text-4xl mb-4">🌍</div>
+                        <h3 class="text-3xl font-black mb-2">+120</h3>
+                        <p class="text-slate-400 text-sm">Revendeurs Actifs en Europe et au Maghreb</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl text-center reveal">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-3xl font-black mb-2">99.8%</h3>
+                        <p class="text-slate-400 text-sm">Uptime garanti sur l'ensemble de nos serveurs</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl text-center reveal">
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-3xl font-black mb-2">24/7</h3>
+                        <p class="text-slate-400 text-sm">Support WhatsApp dédié aux revendeurs professionnels</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── Origin story ── */}
+            <section class="max-w-4xl mx-auto px-4 pb-20 reveal">
+                <div class="bg-indigo-900/20 border border-indigo-500/30 p-8 md:p-12 rounded-3xl">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6">Comment Grossiste IPTV est né</h2>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Tout commence avec un constat simple : la quasi-totalité des fournisseurs IPTV sur le marché opèrent en mode "tout public", vendant aussi bien aux particuliers qu'aux revendeurs. Ce modèle crée une concurrence directe avec leurs propres clients, tire les prix vers le bas et détruit la valeur que les revendeurs essaient de construire.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Nous avons décidé de prendre le contrepied total de cette approche. Grossiste IPTV est une plateforme strictement B2B : nous ne vendons pas aux particuliers, jamais. Notre seul objectif est de fournir aux revendeurs les meilleures conditions du marché — prix de gros, infrastructure premium, panels professionnels et support réactif — pour qu'ils puissent construire une activité durable et rentable.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Aujourd'hui, notre réseau couvre la France, la Belgique, la Suisse, l'Espagne et le Maghreb, avec des partenaires revendeurs qui gèrent des centaines, voire des milliers d'abonnés chacun. Notre croissance repose entièrement sur leur succès — c'est notre seule métrique qui compte.
+                    </p>
+                </div>
+            </section>
+
+            {/* ── Ce qui nous différencie ── */}
+            <section class="max-w-6xl mx-auto px-4 pb-20 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-3">Ce qui nous différencie</h2>
+                    <p class="text-slate-400 max-w-xl mx-auto text-sm">Quatre engagements concrets, pas des promesses marketing.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-[#0D1117] border border-white/10 rounded-2xl p-7">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-indigo-400"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Infrastructure de niveau opérateur</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Nos serveurs sont hébergés dans des datacenters européens avec redondance complète. Chaque panel est monitoré 24h/24 et les incidents sont traités en moins de 15 minutes. Vous n'avez pas à gérer l'infrastructure — c'est notre travail.</p>
+                    </div>
+                    <div class="bg-[#0D1117] border border-white/10 rounded-2xl p-7">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-emerald-400"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Prix de gros réels — pas des remises déguisées</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Nos tarifs sont construits pour que vous puissiez dégager des marges significatives. Pas de frais cachés, pas de renouvellement automatique surprise. Le crédit que vous achetez est le crédit que vous utilisez, point.</p>
+                    </div>
+                    <div class="bg-[#0D1117] border border-white/10 rounded-2xl p-7">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-cyan-400"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Support B2B dédié, pas un bot</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Vous avez accès à un interlocuteur réel sur WhatsApp, disponible tous les jours. Un problème technique à 23h un dimanche ? Nous sommes là. Vos clients ne savent pas que nous existons — c'est ça, être un vrai grossiste.</p>
+                    </div>
+                    <div class="bg-[#0D1117] border border-white/10 rounded-2xl p-7">
+                        <div class="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-violet-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Politique no-retail garantie</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Nous ne vendons jamais directement aux particuliers. Jamais. Votre territoire de revente est protégé. Nous ne sommes pas votre concurrent — nous sommes votre fournisseur exclusif en coulisse.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── Comment ça marche ── */}
+            <section class="max-w-4xl mx-auto px-4 pb-20 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-3">Comment ça marche</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto text-sm">Démarrer avec Grossiste IPTV se fait en trois étapes simples.</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-1/2 top-8 bottom-8 w-px bg-white/5 -translate-x-1/2"></div>
+                    <div class="space-y-6">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <div class="flex-1 bg-[#0D1117] border border-white/10 rounded-2xl p-6 md:text-right">
+                                <span class="inline-block text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Étape 1</span>
+                                <h3 class="font-bold mb-1">Prise de contact B2B</h3>
+                                <p class="text-slate-400 text-sm leading-relaxed">Contactez-nous via WhatsApp en précisant votre volume mensuel estimé et la zone géographique de vos clients. Nous évaluons ensemble le panel qui correspond à votre marché.</p>
+                            </div>
+                            <div class="hidden md:flex w-8 h-8 rounded-full bg-indigo-600 items-center justify-center text-xs font-black shrink-0 mt-6">1</div>
+                            <div class="flex-1 hidden md:block"></div>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <div class="flex-1 hidden md:block"></div>
+                            <div class="hidden md:flex w-8 h-8 rounded-full bg-emerald-600 items-center justify-center text-xs font-black shrink-0 mt-6">2</div>
+                            <div class="flex-1 bg-[#0D1117] border border-white/10 rounded-2xl p-6">
+                                <span class="inline-block text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2">Étape 2</span>
+                                <h3 class="font-bold mb-1">Accès au panel revendeur</h3>
+                                <p class="text-slate-400 text-sm leading-relaxed">Vous recevez vos identifiants d'accès au panel revendeur (Xtream UI ou équivalent). Vous pouvez créer et gérer vos abonnés clients en totale autonomie, avec votre propre branding si vous le souhaitez.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <div class="flex-1 bg-[#0D1117] border border-white/10 rounded-2xl p-6 md:text-right">
+                                <span class="inline-block text-xs font-bold text-cyan-400 uppercase tracking-wider mb-2">Étape 3</span>
+                                <h3 class="font-bold mb-1">Revendez et encaissez</h3>
+                                <p class="text-slate-400 text-sm leading-relaxed">Fixez vos propres tarifs, gérez vos abonnés et rechargez votre compte en crédits selon vos besoins. Vous êtes totalement indépendant vis-à-vis de vos clients — nous opérons en coulisse.</p>
+                            </div>
+                            <div class="hidden md:flex w-8 h-8 rounded-full bg-cyan-600 items-center justify-center text-xs font-black shrink-0 mt-6">3</div>
+                            <div class="flex-1 hidden md:block"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── Pour qui ── */}
+            <section class="max-w-4xl mx-auto px-4 pb-20 reveal">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-3">Pour qui sommes-nous ?</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto text-sm">Grossiste IPTV s'adresse à des profils précis — pas à tout le monde.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+                        <div class="text-2xl mb-3">🚀</div>
+                        <h3 class="font-bold mb-2">Le revendeur débutant</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Vous démarrez votre activité de revente IPTV et cherchez un fournisseur grossiste sérieux avec un panel simple à prendre en main et un support pour vous guider au démarrage.</p>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+                        <div class="text-2xl mb-3">📈</div>
+                        <h3 class="font-bold mb-2">Le revendeur confirmé</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Vous gérez déjà une base d'abonnés et cherchez à réduire vos coûts d'approvisionnement, améliorer l'uptime ou migrer vers un panel plus performant sans interrompre vos clients.</p>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+                        <div class="text-2xl mb-3">🏢</div>
+                        <h3 class="font-bold mb-2">L'agence ou le gestionnaire multi-comptes</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Vous opérez des centaines ou des milliers d'abonnements pour des tiers et avez besoin de volumes importants, de tarifs négociés et d'une infrastructure qui ne lâche jamais.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── CTA ── */}
+            <section class="max-w-3xl mx-auto px-4 pb-24 reveal">
+                <div class="bg-gradient-to-br from-emerald-900/30 to-cyan-900/20 border border-emerald-500/20 rounded-3xl p-10 text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3">Prêt à démarrer ?</h2>
+                    <p class="text-slate-400 text-sm mb-8 max-w-md mx-auto">Contactez-nous sur WhatsApp pour discuter de vos besoins. Réponse garantie en moins de 2 heures en jours ouvrés.</p>
+                    <a
+                        href="https://wa.me/212782389820"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl transition-colors text-sm"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Contacter via WhatsApp
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="w-full border-t border-white/5 bg-[#080b12] relative z-10">
+          <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+              <div class="col-span-2 md:col-span-1">
+                <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+                <p class="text-slate-600 text-xs mt-3 leading-relaxed max-w-[200px]">Le partenaire B2B de confiance pour les revendeurs IPTV. Infrastructure premium, marges maximisées et support dédié 24/7.</p>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serveurs Premium</h4>
+                <ul class="space-y-2">
+                  <li><a href="/serveurs/orca-pro-max" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Orca Pro Max</a></li>
+                  <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Avatar Pro</a></li>
+                  <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Trex IPTV</a></li>
+                  <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Tous les serveurs →</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Guides IPTV</h4>
+                <ul class="space-y-2">
+                  <li><a href="/qu-est-ce-qu-un-panel-iptv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Qu'est-ce qu'un Panel IPTV ?</a></li>
+                  <li><a href="/guide-panel-iptv-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Guide Panel Revendeur</a></li>
+                  <li><a href="/xtream-ui-panel-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Xtream UI Panel</a></li>
+                  <li><a href="/comment-devenir-revendeur-iptv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Devenir Revendeur IPTV</a></li>
+                  <li><a href="/meilleur-panel-iptv-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Meilleur Panel 2026</a></li>
+                  <li><a href="/credits-iptv-en-gros" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Crédits IPTV en Gros</a></li>
+                  <li><a href="/grossiste-iptv-france" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Grossiste IPTV France</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Contact B2B</h4>
+                <ul class="space-y-2">
+                  <li><a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">WhatsApp Pro</a></li>
+                  <li><span class="text-xs text-slate-700">B2B uniquement — pas de vente au détail</span></li>
+                  <li><a href="/a-propos" class="text-xs text-indigo-500 hover:text-indigo-400 transition-colors">À Propos</a></li>
+                  <li><a href="/mentions-legales" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Mentions Légales</a></li>
+                  <li><a href="/cgv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">CGV</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between">
+              <p class="text-[11px] text-slate-700">&copy; {new Date().getFullYear()} Grossiste IPTV. Tous droits réservés.</p>
+              <p class="text-[11px] text-slate-700 mt-1 md:mt-0">Plateforme indépendante de distribution de services de streaming.</p>
+            </div>
+          </div>
+        </footer>
+
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 50)
+                        reveals[i].classList.add("active");
+                }
+            }
+            window.addEventListener("scroll", reveal);
+            reveal();
+        </script>
+
+    <div id="mobile-menu" class="md:hidden fixed inset-0 z-[60] pointer-events-none">
+      <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
+      <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
+        <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
+          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+          <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Fermer le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <nav class="px-4 py-5 flex-1 space-y-1">
+          <a href="/" class="flex items-center h-11 px-3 rounded-xl text-white font-medium hover:bg-white/5 transition-colors">Accueil</a>
+          <a href="/serveurs" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors">Serveurs</a>
+          <div class="pt-3 pb-1"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider px-3 mb-1">Comprendre l'IPTV</p></div>
+          <a href="/qu-est-ce-qu-un-panel-iptv" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-indigo-400 text-xs">→</span>Qu'est-ce qu'un Panel IPTV ?</a>
+          <a href="/xtream-ui-panel-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-indigo-400 text-xs">→</span>Xtream UI Panel Revendeur</a>
+          <a href="/guide-panel-iptv-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-indigo-400 text-xs">→</span>Guide Panel Revendeur</a>
+          <div class="pt-3 pb-1"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider px-3 mb-1">Devenir Revendeur</p></div>
+          <a href="/comment-devenir-revendeur-iptv" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-emerald-400 text-xs">→</span>Devenir Revendeur IPTV</a>
+          <a href="/meilleur-panel-iptv-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-emerald-400 text-xs">→</span>Meilleur Panel IPTV 2026</a>
+          <a href="/credits-iptv-en-gros" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-emerald-400 text-xs">→</span>Crédits IPTV en Gros</a>
+          <a href="/grossiste-iptv-france" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors"><span class="text-emerald-400 text-xs">→</span>Grossiste IPTV France</a>
+          <div class="border-t border-white/10 mt-3 pt-3">
+            <a href="/a-propos" class="flex items-center h-11 px-3 rounded-xl text-indigo-400 font-medium hover:bg-white/5 transition-colors">À Propos</a>
+          </div>
+        </nav>
+        <div class="px-4 pb-6 shrink-0">
+          <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-12 rounded-xl transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Contact B2B WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mMenuBtn = document.getElementById('mobile-menu-btn');
+      const mCloseBtn = document.getElementById('mobile-close-btn');
+      const mMenu = document.getElementById('mobile-menu');
+      const mBackdrop = document.getElementById('mobile-backdrop');
+      const mDrawer = document.getElementById('mobile-drawer');
+      function openNav() {
+        mMenu?.classList.remove('pointer-events-none');
+        mBackdrop?.classList.remove('opacity-0');
+        mBackdrop?.classList.add('opacity-100');
+        mDrawer?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeNav() {
+        mBackdrop?.classList.add('opacity-0');
+        mBackdrop?.classList.remove('opacity-100');
+        mDrawer?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+        setTimeout(() => mMenu?.classList.add('pointer-events-none'), 300);
+      }
+      mMenuBtn?.addEventListener('click', openNav);
+      mCloseBtn?.addEventListener('click', closeNav);
+      mBackdrop?.addEventListener('click', closeNav);
+      mMenu?.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
+    </script>
+    </body>
+</html>

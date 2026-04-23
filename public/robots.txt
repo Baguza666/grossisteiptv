@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grossisteiptv.com/sitemap-index.xml

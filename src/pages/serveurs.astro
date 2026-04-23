@@ -1,0 +1,450 @@
+---
+import "../styles/global.css";
+
+const phone = "212782389820"; // REMPLACEZ PAR VOTRE NUMÉRO
+
+const servers = [
+  { id: "lion-ott", name: "Lion OTT", rating: "4.9", desc: "Stabilité maximale 4K HEVC. Le choix n°1 des revendeurs francophones.", tv: "20,000+", vod: "60,000+", series: "15,000+" },
+  { id: "max-ott", name: "Max OTT", rating: "4.8", desc: "La plus grande bibliothèque VOD du marché. Indispensable pour les cinéphiles.", tv: "15,000+", vod: "80,000+", series: "20,000+" },
+  { id: "dream-4k", name: "Dream 4K", rating: "4.7", desc: "Image RAW non compressée. Pour les connexions Fibre et les grands écrans.", tv: "18,500+", vod: "50,000+", series: "10,000+" },
+  { id: "magnum-ott", name: "Magnum OTT", rating: "4.6", desc: "Serveurs haute capacité (Tank). Conçu pour résister aux pics d'audience.", tv: "17,000+", vod: "40,000+", series: "9,000+" },
+  { id: "dino-iptv", name: "Dino IPTV", rating: "4.9", desc: "Zapping ultra-rapide et application Android dédiée. Top expérience utilisateur.", tv: "19,000+", vod: "55,000+", series: "12,000+" },
+  { id: "trex-iptv", name: "Trex IPTV", rating: "4.5", desc: "Couverture mondiale et prix imbattable. Le meilleur rapport quantité/prix.", tv: "22,000+", vod: "70,000+", series: "25,000+" },
+  { id: "pro-max", name: "Pro Max", rating: "5.0", desc: "Nouvelle technologie de compression H.265. Stable même avec faible débit.", tv: "14,000+", vod: "30,000+", series: "5,000+" },
+];
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Serveurs IPTV Premium | Les 7 Meilleurs Panels Revendeurs — Grossiste IPTV</title>
+    <meta name="description" content="Notre sélection curatée des 7 meilleurs serveurs IPTV pour revendeurs B2B : Lion OTT, Max OTT, Dream 4K, Dino IPTV, Trex et Pro Max. Specs, ratings et tarifs de gros." />
+    <link rel="canonical" href="https://grossisteiptv.com/serveurs/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grossisteiptv.com/serveurs/" />
+    <meta property="og:title" content="Serveurs IPTV Premium | Les 7 Meilleurs Panels Revendeurs — Grossiste IPTV" />
+    <meta property="og:description" content="Notre sélection curatée des 7 meilleurs serveurs IPTV pour revendeurs B2B : Lion OTT, Max OTT, Dream 4K, Dino IPTV, Trex et Pro Max." />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Serveurs IPTV Premium | Les 7 Meilleurs Panels" />
+    <meta name="twitter:description" content="Notre sélection curatée des 7 meilleurs serveurs IPTV pour revendeurs B2B : Lion OTT, Max OTT, Dream 4K, Dino IPTV, Trex et Pro Max." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Serveurs IPTV Premium — Les 7 Meilleurs Panels Revendeurs",
+      "url": "https://grossisteiptv.com/serveurs/",
+      "description": "Notre sélection curatée des 7 meilleurs serveurs IPTV pour revendeurs B2B : Lion OTT, Max OTT, Dream 4K, Dino IPTV, Trex et Pro Max.",
+      "provider": {
+        "@type": "Organization",
+        "name": "GrossisteIPTV",
+        "url": "https://grossisteiptv.com"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Lion OTT",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Max OTT",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dream 4K",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Magnum OTT",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Dino IPTV",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Trex IPTV",
+            "url": "https://grossisteiptv.com/serveurs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Orca Pro Max",
+            "url": "https://grossisteiptv.com/serveurs/orca-pro-max/"
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://grossisteiptv.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveurs IPTV",
+          "item": "https://grossisteiptv.com/serveurs/"
+        }
+      ]
+    }
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  </head>
+  <body class="bg-[#0B0F19] text-white antialiased min-h-screen flex flex-col relative overflow-x-hidden" style="font-family: 'Inter', sans-serif;">
+
+    {/* ── Ambient Glows ── */}
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <div class="absolute top-[-15%] left-1/4 w-[800px] h-[500px] bg-indigo-600/10 blur-[150px] rounded-full"></div>
+      <div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[350px] bg-cyan-600/8 blur-[120px] rounded-full"></div>
+    </div>
+
+    {/* ══════════════════════════════════════════════════════════
+        STICKY GLASSMORPHIC NAVBAR
+    ══════════════════════════════════════════════════════════ */}
+    <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B0F19]/60 backdrop-blur-2xl">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="text-xl font-black tracking-tighter text-white">
+          <img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-7 w-auto" />
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-400">
+          <a href="/" class="hover:text-white transition-colors duration-200">Accueil</a>
+          <a href="/serveurs" class="text-white">Serveurs</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-0 p-0 text-[13px] font-medium text-slate-400">
+              Guides
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200 group-hover:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 min-w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+              <div class="pt-3">
+                <div class="bg-[#0D1117] border border-white/10 rounded-xl p-5 shadow-2xl grid grid-cols-2 gap-5">
+                  <div>
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-3">Comprendre l'IPTV</p>
+                    <div class="space-y-2.5">
+                      <a href="/qu-est-ce-qu-un-panel-iptv" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Qu'est-ce qu'un Panel IPTV ?</a>
+                      <a href="/xtream-ui-panel-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Xtream UI Panel Revendeur</a>
+                      <a href="/guide-panel-iptv-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-indigo-400 text-[10px]">→</span>Guide Panel Revendeur</a>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-3">Devenir Revendeur</p>
+                    <div class="space-y-2.5">
+                      <a href="/comment-devenir-revendeur-iptv" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Devenir Revendeur IPTV</a>
+                      <a href="/meilleur-panel-iptv-revendeur" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Meilleur Panel IPTV 2026</a>
+                      <a href="/credits-iptv-en-gros" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Crédits IPTV en Gros</a>
+                      <a href="/grossiste-iptv-france" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-[12px]"><span class="text-emerald-400 text-[10px]">→</span>Grossiste IPTV France</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/a-propos" class="hover:text-white transition-colors duration-200">À Propos</a>
+        </nav>
+        <a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+          Contact B2B
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Ouvrir le menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="flex-grow relative z-10">
+
+      {/* ══════════════════════════════════════════════════════════
+          HERO
+      ══════════════════════════════════════════════════════════ */}
+      <section class="max-w-7xl mx-auto px-6 pt-20 pb-16 reveal">
+        <div class="text-center max-w-3xl mx-auto">
+          {/* Badge */}
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold tracking-wide uppercase mb-6">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            Sélection Curatée
+          </div>
+
+          <h1 class="text-4xl md:text-[3.25rem] font-extrabold leading-[1.1] tracking-tight mb-6">
+            Notre Sélection <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-indigo-400 to-cyan-400">Premium</span>
+          </h1>
+
+          <p class="text-lg text-slate-400 leading-relaxed mb-10">
+            Seulement les <strong class="text-white">7 meilleurs serveurs mondiaux</strong>, testés et approuvés pour vos clients. Chaque panel a été évalué sur la stabilité, la qualité d'image et la richesse du catalogue.
+          </p>
+
+          {/* Legend bar */}
+          <div class="inline-flex items-center gap-6 px-6 py-3 rounded-full bg-white/[0.03] border border-white/[0.06] text-xs text-slate-500">
+            <span class="flex items-center gap-1.5"><span class="text-emerald-400">📺</span> Chaînes Live</span>
+            <div class="w-px h-4 bg-white/10"></div>
+            <span class="flex items-center gap-1.5"><span class="text-indigo-400">🎬</span> Films VOD</span>
+            <div class="w-px h-4 bg-white/10"></div>
+            <span class="flex items-center gap-1.5"><span class="text-cyan-400">▶️</span> Séries</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════
+          SERVER SPEC CARDS GRID
+      ══════════════════════════════════════════════════════════ */}
+      <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {
+            servers.map((server) => {
+              const waText = encodeURIComponent(`Bonjour, je souhaite les tarifs de gros pour ${server.name}`);
+              const waLink = `https://wa.me/${phone}?text=${waText}`;
+              const isPerfect = server.rating === "5.0";
+
+              return (
+                <div class="group relative flex flex-col bg-white/[0.03] border border-white/[0.06] hover:border-indigo-500/30 rounded-2xl p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-white/[0.05] hover:shadow-xl hover:shadow-indigo-500/5">
+
+                  {/* ── Card Header: Logo + Name + Rating ── */}
+                  <div class="flex items-start gap-4 mb-4">
+                    {/* Logo Fallback Container */}
+                    <div class="relative w-14 h-14 shrink-0 rounded-xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center border border-slate-700/50 group-hover:border-indigo-500/40 transition-colors duration-300 shadow-inner">
+                      <span class="text-2xl font-black text-slate-700 select-none">{server.name.charAt(0)}</span>
+                      <img
+                        src={`/servers/${server.id}.webp`}
+                        alt={`Logo ${server.name}`}
+                        class="absolute inset-0 w-full h-full object-contain p-2 z-10 opacity-0 transition-opacity duration-300 drop-shadow-lg"
+                        loading="lazy"
+                        onload="this.classList.remove('opacity-0'); this.previousElementSibling.style.display='none';"
+                        onerror="this.style.display='none'"
+                      />
+                    </div>
+                    {/* Name + Rating */}
+                    <div class="flex-1 min-w-0">
+                      <h3 class="text-lg font-bold text-white truncate">{server.name}</h3>
+                      <div class={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-bold mt-1 ${
+                        isPerfect
+                          ? "bg-amber-500/15 text-amber-400 border border-amber-500/20"
+                          : "bg-white/5 text-amber-400/80 border border-white/10"
+                      }`}>
+                        <svg class="w-3 h-3 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        {server.rating}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* ── Description ── */}
+                  <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">{server.desc}</p>
+
+                  {/* ── Specs Micro-Grid ── */}
+                  <div class="bg-slate-900/50 rounded-xl p-3 mb-5 grid grid-cols-3 gap-2">
+                    <div class="text-center">
+                      <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold mb-0.5">📺 Live TV</div>
+                      <div class="text-sm font-bold text-white">{server.tv}</div>
+                    </div>
+                    <div class="text-center border-x border-white/5">
+                      <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold mb-0.5">🎬 VOD</div>
+                      <div class="text-sm font-bold text-white">{server.vod}</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold mb-0.5">▶️ Séries</div>
+                      <div class="text-sm font-bold text-white">{server.series}</div>
+                    </div>
+                  </div>
+
+                  {/* ── WhatsApp CTA ── */}
+                  <a
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-auto w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-bold transition-all duration-300 cursor-pointer bg-white/5 hover:bg-emerald-500 border border-white/10 hover:border-emerald-500 text-slate-300 hover:text-white hover:shadow-lg hover:shadow-emerald-500/20"
+                  >
+                    <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.328-.724-6.025-1.964a.75.75 0 00-.652-.13l-3.14 1.051 1.052-3.14a.75.75 0 00-.13-.653A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                    Obtenir mes Tarifs de Gros
+                  </a>
+                </div>
+              );
+            })
+          }
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════
+          TRUST BANNER
+      ══════════════════════════════════════════════════════════ */}
+      <section class="max-w-5xl mx-auto px-6 pb-24 reveal">
+        <div class="bg-gradient-to-r from-indigo-950/40 to-[#0f1420] border border-indigo-500/10 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-[300px] h-[200px] bg-indigo-500/5 blur-[80px] rounded-full"></div>
+          <div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mb-4">Pourquoi seulement 7 serveurs ?</h2>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Le marché regorge de panels IPTV médiocres qui disparaissent après quelques semaines. Nous avons testé plus de <strong class="text-white">50 serveurs</strong> pour n'en retenir que 7. Chaque serveur de cette liste a été évalué sur :
+              </p>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-sm shrink-0">✅</div>
+                <span class="text-sm text-slate-300">Uptime réel supérieur à <strong class="text-white">99.5%</strong> sur 6 mois</span>
+              </div>
+              <div class="flex items-center gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-sm shrink-0">✅</div>
+                <span class="text-sm text-slate-300">Zéro freeze pendant <strong class="text-white">Champions League & UFC</strong></span>
+              </div>
+              <div class="flex items-center gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-sm shrink-0">✅</div>
+                <span class="text-sm text-slate-300">VOD mise à jour <strong class="text-white">quotidiennement</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SEO Paragraph ── */}
+      <section class="max-w-4xl mx-auto px-6 pb-20">
+        <p class="text-slate-600 text-sm leading-relaxed text-center">
+          Grossiste IPTV sélectionne rigoureusement les meilleurs <strong class="text-slate-500">panels revendeurs IPTV</strong> pour garantir la satisfaction de vos clients. Notre sélection curatée inclut <strong class="text-slate-500">Lion OTT</strong> pour sa stabilité 4K, <strong class="text-slate-500">Max OTT</strong> pour sa VOD massive, <strong class="text-slate-500">Dream 4K</strong> pour l'image non compressée, <strong class="text-slate-500">Dino IPTV</strong> pour la rapidité du zapping, <strong class="text-slate-500">Trex IPTV</strong> pour la couverture mondiale, <strong class="text-slate-500">Magnum OTT</strong> pour la résistance aux pics, et <strong class="text-slate-500">Pro Max</strong> pour la technologie H.265 de dernière génération.
+        </p>
+      </section>
+
+    </main>
+
+    {/* ══════════════════════════════════════════════════════════
+        FOOTER
+    ══════════════════════════════════════════════════════════ */}
+    <footer class="w-full border-t border-white/5 bg-[#080b12] relative z-10">
+      <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+          <div class="col-span-2 md:col-span-1">
+            <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+            <p class="text-slate-600 text-xs mt-3 leading-relaxed max-w-[200px]">Sélection curatée de {servers.length} serveurs premium pour les revendeurs IPTV B2B.</p>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serveurs Premium</h4>
+            <ul class="space-y-2">
+              {servers.slice(0, 4).map((s) => (
+                <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">{s.name}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Guides IPTV</h4>
+            <ul class="space-y-2">
+              <li><a href="/qu-est-ce-qu-un-panel-iptv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Qu'est-ce qu'un Panel IPTV ?</a></li>
+              <li><a href="/guide-panel-iptv-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Guide Panel Revendeur</a></li>
+              <li><a href="/xtream-ui-panel-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Xtream UI Panel</a></li>
+              <li><a href="/comment-devenir-revendeur-iptv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Devenir Revendeur IPTV</a></li>
+              <li><a href="/meilleur-panel-iptv-revendeur" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Meilleur Panel 2026</a></li>
+              <li><a href="/credits-iptv-en-gros" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Crédits IPTV en Gros</a></li>
+              <li><a href="/grossiste-iptv-france" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Grossiste IPTV France</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Contact B2B</h4>
+            <ul class="space-y-2">
+              <li><a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">WhatsApp Pro</a></li>
+              <li><span class="text-xs text-slate-700">Réservé aux professionnels</span></li>
+              <li><a href="/a-propos" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">À Propos</a></li>
+              <li><a href="/mentions-legales" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Mentions Légales</a></li>
+              <li><a href="/cgv" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">CGV</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between">
+          <p class="text-[11px] text-slate-700">&copy; {new Date().getFullYear()} Grossiste IPTV. Tous droits réservés.</p>
+          <p class="text-[11px] text-slate-700 mt-1 md:mt-0">Plateforme B2B indépendante de distribution de services streaming.</p>
+        </div>
+      </div>
+    </footer>
+
+    {/* ── Scroll Reveal ── */}
+    <script>
+      function reveal() {
+        const els = document.querySelectorAll(".reveal");
+        for (const el of els) {
+          if (el.getBoundingClientRect().top < window.innerHeight - 50) el.classList.add("active");
+        }
+      }
+      window.addEventListener("scroll", reveal);
+      reveal();
+    </script>
+    <div id="mobile-menu" class="md:hidden fixed inset-0 z-[60] pointer-events-none">
+      <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
+      <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
+        <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
+          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" class="h-6 w-auto" /></a>
+          <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Fermer le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <nav class="px-4 py-5 flex-1 space-y-1">
+          <a href="/" class="flex items-center h-11 px-3 rounded-xl text-white font-medium hover:bg-white/5 transition-colors">Accueil</a>
+          <a href="/serveurs" class="flex items-center h-11 px-3 rounded-xl text-indigo-400 font-medium hover:bg-white/5 transition-colors">Serveurs</a>
+          <div class="pt-3 pb-1">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider px-3 mb-1">Comprendre l'IPTV</p>
+          </div>
+          <a href="/qu-est-ce-qu-un-panel-iptv" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-indigo-400 text-xs">→</span>Qu'est-ce qu'un Panel IPTV ?</a>
+          <a href="/xtream-ui-panel-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-indigo-400 text-xs">→</span>Xtream UI Panel Revendeur</a>
+          <a href="/guide-panel-iptv-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-indigo-400 text-xs">→</span>Guide Panel Revendeur</a>
+          <div class="pt-3 pb-1">
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider px-3 mb-1">Devenir Revendeur</p>
+          </div>
+          <a href="/comment-devenir-revendeur-iptv" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-emerald-400 text-xs">→</span>Devenir Revendeur IPTV</a>
+          <a href="/meilleur-panel-iptv-revendeur" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-emerald-400 text-xs">→</span>Meilleur Panel IPTV 2026</a>
+          <a href="/credits-iptv-en-gros" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-emerald-400 text-xs">→</span>Crédits IPTV en Gros</a>
+          <a href="/grossiste-iptv-france" class="flex items-center h-11 gap-2 px-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-colors text-sm"><span class="text-emerald-400 text-xs">→</span>Grossiste IPTV France</a>
+          <div class="border-t border-white/10 mt-3 pt-3">
+            <a href="/a-propos" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white transition-colors">À Propos</a>
+          </div>
+        </nav>
+        <div class="px-4 pb-6 shrink-0">
+          <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-12 rounded-xl transition-colors text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.328-.724-6.025-1.964a.75.75 0 00-.652-.13l-3.14 1.051 1.052-3.14a.75.75 0 00-.13-.653A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Contact B2B WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mMenuBtn = document.getElementById('mobile-menu-btn');
+      const mCloseBtn = document.getElementById('mobile-close-btn');
+      const mMenu = document.getElementById('mobile-menu');
+      const mBackdrop = document.getElementById('mobile-backdrop');
+      const mDrawer = document.getElementById('mobile-drawer');
+      function openNav() {
+        mMenu?.classList.remove('pointer-events-none');
+        mBackdrop?.classList.remove('opacity-0');
+        mBackdrop?.classList.add('opacity-100');
+        mDrawer?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeNav() {
+        mBackdrop?.classList.add('opacity-0');
+        mBackdrop?.classList.remove('opacity-100');
+        mDrawer?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+        setTimeout(() => mMenu?.classList.add('pointer-events-none'), 300);
+      }
+      mMenuBtn?.addEventListener('click', openNav);
+      mCloseBtn?.addEventListener('click', closeNav);
+      mBackdrop?.addEventListener('click', closeNav);
+      mMenu?.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
+    </script>
+  </body>
+</html>
