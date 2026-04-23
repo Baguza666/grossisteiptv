@@ -1,0 +1,31 @@
+keyword,cluster,target_url,page_role,primary,intent,volume_est_fr,serp_weakness,difficulty_estimate,opportunity_type,priority,notes
+iptv revendeur,Homepage,/,pillar,Y,commercial,500-1000,2,medium,new,P1,Top results: iptvengros.com + iptvrevendeur.com + guru99 — commercial SERP — target homepage H1/title. Google de-pluralizes iptv revendeurs = same query.
+iptv revendeurs,Homepage,/,pillar,N,commercial,500-1000,2,medium,new,P1,Google treats identical to iptv revendeur — no separate page needed
+panel iptv,Education & Definitions,/guide-panel-iptv-revendeur/,pillar,N,informational+commercial,500-1000,3,medium,new,P1,SERP is Fiverr + Quora + English guides — fundamentally different from homepage SERP — route to pillar guide NOT homepage. Include as secondary on /guide-panel-iptv-revendeur/ and /qu-est-ce-qu-un-panel-iptv/
+acheter code iptv en gros,Commercial & Transactional,/credits-iptv-en-gros/,supporting,N,transactional,100-300,4,low,new,P1,Very close SERP to crédits iptv en gros — primary target /credits-iptv-en-gros/ — homepage supports as secondary via pricing section copy
+panel iptv c'est quoi,Education & Definitions,/qu-est-ce-qu-un-panel-iptv/,supporting,Y,informational,200-500,4,low,new,P1,Weakest educational SERP - Billetweb event listing ranks #1 (completely off-intent)
+comment fonctionne un panel iptv,Education & Definitions,/qu-est-ce-qu-un-panel-iptv/,supporting,N,informational,50-150,4,low,new,P1,Secondary keyword for definition page
+panel iptv definition,Education & Definitions,/qu-est-ce-qu-un-panel-iptv/,supporting,N,informational,50-100,4,low,new,P1,Tertiary - weave into body copy naturally
+xtream ui panel revendeur,Education & Definitions,/xtream-ui-panel-revendeur/,supporting,Y,informational+commercial,100-200,4,low,new,P1,No French commercial content in top 10 - English guide + Fiverr gigs dominate
+xtream codes panel revendeur,Education & Definitions,/xtream-ui-panel-revendeur/,supporting,N,informational,50-100,3,low,new,P1,Secondary - include in FAQ or H2 section
+panel xtream ui prix,Education & Definitions,/xtream-ui-panel-revendeur/,supporting,N,commercial,50-100,3,low,new,P1,Include a pricing section on this page
+crédits iptv en gros,Commercial & Transactional,/credits-iptv-en-gros/,supporting,Y,commercial,100-300,5,very low,new,P1,BIGGEST OPPORTUNITY - Alibaba and B2B marketplaces dominate - zero niche content
+acheter crédits iptv grossiste,Commercial & Transactional,/credits-iptv-en-gros/,supporting,N,transactional,50-150,4,low,new,P1,High-conversion secondary - include in title or H1 variant
+tarif crédits iptv revendeur,Commercial & Transactional,/credits-iptv-en-gros/,supporting,N,commercial,50-100,3,low,new,P1,Include pricing table section
+prix crédits iptv en gros,Commercial & Transactional,/credits-iptv-en-gros/,supporting,N,commercial,50-100,4,low,new,P1,Weave into pricing section copy
+iptv grossiste,Commercial & Transactional,/grossiste-iptv-france/,supporting,Y,commercial,300-700,5,very low,new,P1,destockplus + made-in-china rank - zero specialized competition
+grossiste iptv france,Commercial & Transactional,/grossiste-iptv-france/,supporting,N,commercial,100-200,2,medium,new,P1,Secondary to iptv grossiste - include in H1 or early body
+panel iptv b2b,Commercial & Transactional,/grossiste-iptv-france/,supporting,N,commercial,50-100,4,low,new,P1,Tertiary - weave naturally
+panel iptv revendeur,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,Y,commercial,300-600,3,medium,new,P1,iptvengros.com + Guru99 present - beatable with 3000+ word French guide
+panel iptv grossiste,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,N,commercial,200-400,3,medium,new,P1,Strong secondary for pillar page
+iptv panel pour revendeur,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,N,commercial,100-300,3,medium,new,P1,Include in intro paragraph and FAQ
+panel iptv abonnement revendeur,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,N,commercial,100-200,2,medium,new,P1,Address in a dedicated H2 section
+panel iptv prix,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,N,commercial,200-400,2,medium,new,P1,Include pricing section with table
+acheter panel iptv,Comparison & Decision,/guide-panel-iptv-revendeur/,pillar,N,transactional,150-300,2,medium,new,P1,Include near-bottom CTA section
+meilleur panel iptv revendeur,Comparison & Decision,/meilleur-panel-iptv-revendeur/,supporting,Y,commercial,200-400,3,medium,new,P1,Guru99 English roundup dominates - French deep comparison will outperform
+top panel iptv revendeur,Comparison & Decision,/meilleur-panel-iptv-revendeur/,supporting,N,commercial,50-100,3,medium,new,P1,Weave into intro and comparison table headers
+comparatif panel iptv,Comparison & Decision,/meilleur-panel-iptv-revendeur/,supporting,N,commercial,50-150,3,low,new,P1,Include in title variant or H2
+comment devenir revendeur iptv,Comparison & Decision,/comment-devenir-revendeur-iptv/,supporting,Y,informational+commercial,200-500,3,medium,new,P1,Multiple thin guides rank - step-by-step France-specific guide will win
+revendeur iptv france,Comparison & Decision,/comment-devenir-revendeur-iptv/,supporting,N,commercial,150-300,3,medium,new,P1,Include in H1 and intro section
+devenir revendeur iptv,Comparison & Decision,/comment-devenir-revendeur-iptv/,supporting,N,commercial,100-200,3,medium,new,P1,Weave throughout as secondary
+revendeur iptv panel prix,Comparison & Decision,/comment-devenir-revendeur-iptv/,supporting,N,commercial,100-200,2,medium,new,P1,Address in the pricing/margin step of the guide
