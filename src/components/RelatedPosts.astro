@@ -1,0 +1,84 @@
+---
+/**
+ * RelatedPosts.astro
+ *
+ * Pre-conditions: Loaded within an Astro page that uses SiteLayout.
+ * Post-conditions: Renders up to 3 related blog post links as styled cards.
+ *
+ * Input:  currentPath (string) — the current page's URL path, used to exclude self from results.
+ * Output: A <section> with up to 3 blog post link cards, dynamically fetched via Astro.glob().
+ */
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = "" } = Astro.props;
+
+// Fetch all .astro blog posts (top-level, non-index) using Vite's import.meta.glob
+const astroModulesObj = import.meta.glob("../pages/blog/*.astro", { eager: true });
+const astroModules = Object.values(astroModulesObj);
+
+// Fetch all .mdx blog posts
+const mdxModulesObj = import.meta.glob("../pages/blog/*.mdx", { eager: true });
+const mdxModules = Object.values(mdxModulesObj);
+
+interface BlogPost {
+  title: string;
+  href: string;
+  cat: string;
+  catColor: string;
+}
+
+const posts: BlogPost[] = [];
+
+// Extract metadata from .astro files (they use inline <title> or frontmatter)
+for (const mod of astroModules) {
+  const url = mod.url;
+  if (!url || url === "/blog" || url === currentPath) continue;
+  // Derive title from url slug
+  const slug = url.replace("/blog/", "").replace(/\/$/, "");
+  if (!slug) continue;
+  const title = slug
+    .split("-")
+    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+  posts.push({
+    title,
+    href: url,
+    cat: "Blog",
+    catColor: "text-indigo-400",
+  });
+}
+
+// Extract metadata from .mdx files (they have frontmatter)
+for (const mod of mdxModules) {
+  const fm = mod.frontmatter;
+  const url = mod.url;
+  if (!url || url === currentPath) continue;
+  posts.push({
+    title: fm?.title || url.replace("/blog/", "").replace(/\/$/, ""),
+    href: url,
+    cat: "Blog",
+    catColor: "text-emerald-400",
+  });
+}
+
+// Shuffle and pick 3
+const shuffled = posts.sort(() => 0.5 - Math.random());
+const related = shuffled.slice(0, 3);
+---
+
+{related.length > 0 && (
+  <section class="max-w-4xl mx-auto px-6 pb-20 reveal">
+    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-5">Articles similaires</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      {related.map((post) => (
+        <a href={post.href} class="bg-[#0f1420] border border-white/5 hover:border-indigo-500/30 rounded-xl p-5 transition-all group">
+          <p class={`text-[10px] font-bold uppercase tracking-wider mb-1.5 ${post.catColor}`}>{post.cat}</p>
+          <h4 class="text-sm font-bold text-white group-hover:text-indigo-300 transition-colors leading-snug">{post.title}</h4>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

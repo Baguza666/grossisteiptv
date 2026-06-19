@@ -1,0 +1,165 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://grossisteiptv.com/contact/",
+    "name": "Contact Grossiste IPTV — Hub B2B",
+    "description": "Tous les canaux de contact pour les revendeurs IPTV : WhatsApp, email, formulaire de lead. Réponse sous 15 minutes en heures ouvrées.",
+    "publisher": { "@type": "Organization", "name": "Grossiste IPTV", "url": "https://grossisteiptv.com" },
+  },
+];
+---
+
+<SiteLayout
+  title="Contact Grossiste IPTV : WhatsApp, Email & Support B2B"
+  description="Tous les canaux de contact Grossiste IPTV : WhatsApp B2B 24/7, email commercial, formulaire de devis. Réponse sales sous 2h, support technique sous 15 min."
+  canonical="https://grossisteiptv.com/contact/"
+  active="contact"
+  jsonLd={jsonLd}
+>
+
+  <section class="max-w-4xl mx-auto px-6 pt-20 lg:pt-28 pb-12 text-center reveal">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase mb-6">Nous Contacter</div>
+    <h1 class="text-4xl md:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight mb-6">
+      Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Grossiste IPTV B2B</span>
+    </h1>
+    <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+      Notre équipe répond exclusivement aux demandes professionnelles. Choisissez le canal qui correspond le mieux à votre besoin — sales, technique ou administratif.
+    </p>
+  </section>
+
+  {/* CONTACT METHODS */}
+  <section class="max-w-5xl mx-auto px-6 py-12 reveal">
+    <div class="grid md:grid-cols-2 gap-5">
+      <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="group bg-gradient-to-br from-emerald-950/40 to-[#0f1420] border border-emerald-500/30 hover:border-emerald-500/50 rounded-2xl p-8 transition-all" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'content_cta' });">
+        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-5">
+          <WhatsAppIcon class="w-7 h-7 text-emerald-400" />
+        </div>
+        <h2 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">WhatsApp Business B2B</h2>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Le canal principal. Devis, support technique, questions commerciales. Réponse sous 15 minutes en heures ouvrées.</p>
+        <span class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold">
+          +212 782 389 820
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </span>
+      </a>
+      <a href="mailto:contact@grossisteiptv.com" class="group bg-gradient-to-br from-indigo-950/40 to-[#0f1420] border border-indigo-500/30 hover:border-indigo-500/50 rounded-2xl p-8 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-indigo-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h2 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Email Commercial</h2>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Pour les demandes formelles : devis volumes 100+, partenariats agences, demandes de migration coordonnée.</p>
+        <span class="inline-flex items-center gap-2 text-indigo-400 text-sm font-semibold">
+          contact@grossisteiptv.com
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  {/* HOURS & RESPONSE TIMES */}
+  <section class="max-w-5xl mx-auto px-6 py-12 reveal">
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-7">
+        <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Horaires d'ouverture
+        </h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex justify-between"><span class="text-slate-400">Lundi – Vendredi</span><span class="text-white font-semibold">9h – 23h</span></li>
+          <li class="flex justify-between"><span class="text-slate-400">Samedi</span><span class="text-white font-semibold">10h – 20h</span></li>
+          <li class="flex justify-between"><span class="text-slate-400">Dimanche</span><span class="text-white font-semibold">14h – 22h</span></li>
+          <li class="flex justify-between border-t border-white/5 pt-2 mt-2"><span class="text-emerald-400 font-semibold">Support urgence</span><span class="text-emerald-400 font-semibold">24/7</span></li>
+        </ul>
+      </div>
+      <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-7">
+        <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Délais de réponse
+        </h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between items-center"><span class="text-slate-400">Sales / devis WhatsApp</span><span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-xs font-bold">&lt; 2h</span></li>
+          <li class="flex justify-between items-center"><span class="text-slate-400">Support technique B2B</span><span class="bg-cyan-500/10 text-cyan-400 px-2 py-0.5 rounded text-xs font-bold">&lt; 15 min</span></li>
+          <li class="flex justify-between items-center"><span class="text-slate-400">Email commercial</span><span class="bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded text-xs font-bold">&lt; 24h</span></li>
+          <li class="flex justify-between items-center"><span class="text-slate-400">Demande migration</span><span class="bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded text-xs font-bold">&lt; 4h</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* LEAD FORM */}
+  <section class="max-w-3xl mx-auto px-6 py-12 reveal">
+    <div class="bg-gradient-to-br from-indigo-950/40 to-[#0f1420] border border-white/10 rounded-3xl p-8 md:p-10">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">Formulaire de demande rapide</h2>
+        <p class="text-slate-400 text-sm">Répondez aux 4 questions, nous vous recontactons sur WhatsApp avec un devis adapté.</p>
+      </div>
+      <form id="contact-form" class="space-y-5">
+        <div class="space-y-2">
+          <label for="contact-name" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider">Votre prénom</label>
+          <input id="contact-name" type="text" placeholder="Ex. Karim" class="w-full bg-white/5 border border-white/10 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all" />
+        </div>
+        <div class="space-y-2">
+          <label for="contact-server" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider">Serveur souhaité</label>
+          <select id="contact-server" class="w-full bg-white/5 border border-white/10 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all appearance-none cursor-pointer">
+            <option>Lion OTT</option>
+            <option>Max OTT</option>
+            <option>Trex IPTV</option>
+            <option>Dream 4K</option>
+            <option>Magnum OTT</option>
+            <option>Pro Max</option>
+            <option>Dino IPTV</option>
+            <option>Conseil souhaité</option>
+          </select>
+        </div>
+        <div class="space-y-2">
+          <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider">Volume estimé</label>
+          <div class="grid grid-cols-3 gap-2">
+            <label class="cursor-pointer"><input type="radio" name="contact-volume" value="10" class="peer sr-only" checked /><div class="text-center py-2.5 rounded-lg border border-white/10 bg-white/5 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all text-sm font-medium text-slate-400 peer-checked:text-indigo-400">10 crédits</div></label>
+            <label class="cursor-pointer"><input type="radio" name="contact-volume" value="50" class="peer sr-only" /><div class="text-center py-2.5 rounded-lg border border-white/10 bg-white/5 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all text-sm font-medium text-slate-400 peer-checked:text-indigo-400">50 crédits</div></label>
+            <label class="cursor-pointer"><input type="radio" name="contact-volume" value="100+" class="peer sr-only" /><div class="text-center py-2.5 rounded-lg border border-white/10 bg-white/5 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all text-sm font-medium text-slate-400 peer-checked:text-indigo-400">100+ crédits</div></label>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label for="contact-profile" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider">Votre profil</label>
+          <select id="contact-profile" class="w-full bg-white/5 border border-white/10 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all appearance-none cursor-pointer">
+            <option>Revendeur débutant</option>
+            <option>Revendeur existant — migration</option>
+            <option>Agence / multi-comptes</option>
+          </select>
+        </div>
+        <button type="button" id="contact-send" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl transition-all text-sm cursor-pointer flex items-center justify-center gap-2">
+          <WhatsAppIcon class="w-4 h-4" />
+          Envoyer ma demande sur WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 pb-24 reveal">
+    <div class="bg-amber-950/20 border border-amber-500/20 rounded-2xl p-6 text-center">
+      <p class="text-slate-300 text-sm leading-relaxed">
+        <strong class="text-amber-400">⚠️ B2B uniquement.</strong> Nous ne vendons pas aux particuliers. Toute demande de revente individuelle ne sera pas traitée. Pour acheter un abonnement personnel, adressez-vous à un revendeur final.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const sendBtn = document.getElementById("contact-send");
+    if (sendBtn) {
+      sendBtn.addEventListener("click", () => {
+        const name = (document.getElementById("contact-name") as HTMLInputElement)?.value || "";
+        const server = (document.getElementById("contact-server") as HTMLSelectElement)?.value || "";
+        const volumeEl = document.querySelector('input[name="contact-volume"]:checked') as HTMLInputElement;
+        const volume = volumeEl ? volumeEl.value : "10";
+        const profile = (document.getElementById("contact-profile") as HTMLSelectElement)?.value || "";
+        const msg = `Bonjour, je souhaite un devis revendeur IPTV.\n\n👤 Prénom : ${name}\n🖥️ Serveur : ${server}\n📦 Volume : ${volume} crédits\n👔 Profil : ${profile}`;
+        window.open(`https://wa.me/212782389820?text=${encodeURIComponent(msg)}`, "_blank");
+      });
+    }
+  </script>
+
+</SiteLayout>

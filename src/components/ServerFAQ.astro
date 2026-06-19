@@ -1,0 +1,76 @@
+---
+/**
+ * ServerFAQ.astro
+ *
+ * Reusable Astro component — no props required.
+ * Outputs static HTML with Schema.org FAQPage Microdata.
+ *
+ * Pre-conditions:
+ *   - Component is loaded within an existing page layout
+ *     (server pages provide their own <html>, <head>, <body>).
+ *
+ * Post-conditions:
+ *   - Outputs a valid HTML5 <section> element
+ *   - Contains Schema.org FAQPage microdata (itemscope/itemtype/itemprop)
+ *   - Styled consistently with the site design system
+ */
+---
+
+<section class="max-w-4xl mx-auto px-6 py-16 reveal" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="text-center mb-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-4">FAQ Serveur</div>
+    <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Questions fréquentes</h2>
+  </div>
+
+  <div class="space-y-4">
+
+    <!-- FAQ 1 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Quel est le délai d'activation de mon panel revendeur ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Votre panel revendeur est activé sous 2 heures maximum après confirmation du paiement. En pratique, 90 % des activations sont effectuées en moins de 30 minutes pendant les heures ouvrées. Vous recevez vos identifiants par WhatsApp et pouvez créer votre premier abonnement client immédiatement.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Quels appareils sont compatibles avec les abonnements créés ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Tous nos serveurs sont compatibles avec Smart TV (Samsung, LG), Android TV, Fire Stick, Chromecast, iOS (iPhone, iPad), appareils MAG, Formuler, ainsi que les lecteurs m3u (VLC, IPTV Smarters, TiviMate). Un seul abonnement fonctionne sur tous ces appareils via Xtream Codes ou lien m3u.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Quel est l'uptime garanti sur les serveurs ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Nous garantissons un uptime de 99,9 % sur l'ensemble de nos serveurs. Notre infrastructure anti-freeze est dimensionnée pour absorber les pics de charge lors des événements sportifs majeurs (Ligue des Champions, Coupe du Monde, UFC). En cas d'incident, notre équipe technique intervient sous 15 minutes.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Puis-je tester le serveur avant d'acheter des crédits ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Oui. Nous offrons un accès test gratuit de 24 heures à tout revendeur professionnel. Ce test vous donne accès à l'intégralité du catalogue (chaînes live, VOD, séries) dans les mêmes conditions qu'un abonnement client réel. Contactez-nous sur WhatsApp pour recevoir votre code test.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Comment fonctionne le support technique B2B ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Notre support B2B est disponible 24h/24, 7j/7 via WhatsApp. Vous bénéficiez d'un interlocuteur dédié qui connaît votre historique et vos serveurs. Le délai de réponse moyen est de 8 minutes. Pour les revendeurs à 50+ crédits, un account manager personnel est attribué avec priorité de traitement.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 6 -->
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="font-bold text-white mb-2" itemprop="name">Puis-je utiliser plusieurs serveurs en même temps ?</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="text-slate-400 text-sm leading-relaxed" itemprop="text">Absolument. La majorité de nos revendeurs expérimentés travaillent avec 2 à 3 serveurs simultanément pour diversifier leur offre et couvrir différents segments de clientèle. Chaque serveur dispose de son propre panel — vous gérez vos crédits indépendamment sur chacun. Consultez notre <a href="/comparatif-serveurs-iptv" class="text-emerald-400 hover:text-emerald-300">comparatif serveurs</a> pour choisir la meilleure combinaison.</p>
+      </div>
+    </div>
+
+  </div>
+</section>

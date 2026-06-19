@@ -1,0 +1,249 @@
+---
+import "../styles/global.css";
+import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+import RelatedPosts from "../components/RelatedPosts.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  ogImageAlt?: string;
+  active?: string;
+  jsonLd?: any[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogTitle = title,
+  ogDescription = description,
+  twitterTitle = title,
+  twitterDescription = description,
+  ogImageAlt = "Grossiste IPTV — Panel Revendeur IPTV en Gros B2B",
+  active = "",
+  jsonLd = [],
+} = Astro.props;
+
+const isActive = (k: string) => active === k;
+---
+
+<html lang="fr">
+  <head>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-J0C0H0WXR9"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J0C0H0WXR9');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script is:inline>
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "wpzq3c0mnu");
+    </script>
+    <!-- WhatsApp CTA → Clarity event -->
+    <script is:inline>
+      document.addEventListener('click', function(e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href*="wa.me"]');
+        if (a && window.clarity) window.clarity('event', 'whatsapp_click');
+      }, { capture: true });
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="https://grossisteiptv.com/grossisteiptvlogo.png" />
+    <meta property="og:image:width" content="519" />
+    <meta property="og:image:height" content="69" />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta property="og:site_name" content="Grossiste IPTV" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={twitterTitle} />
+    <meta name="twitter:description" content={twitterDescription} />
+    <meta name="twitter:image" content="https://grossisteiptv.com/grossisteiptvlogo.png" />
+    {jsonLd.map((schema) => (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+    ))}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  </head>
+  <body class="bg-[#0B0F19] text-white antialiased min-h-screen flex flex-col relative overflow-x-hidden" style="font-family: 'Inter', sans-serif;">
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <div class="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-indigo-600/15 blur-[150px] rounded-full"></div>
+      <div class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[400px] bg-emerald-600/8 blur-[120px] rounded-full"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B0F19]/60 backdrop-blur-2xl">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="text-xl font-black tracking-tighter text-white" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" />
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-400">
+          <a href="/" class={isActive("home") ? "text-white" : "hover:text-white transition-colors"}>Accueil</a>
+          <a href="/serveurs" class={isActive("serveurs") ? "text-white" : "hover:text-white transition-colors"}>Serveurs</a>
+          <a href="/services" class={isActive("services") ? "text-white" : "hover:text-white transition-colors"}>Services</a>
+          <a href="/tarifs-grossiste-iptv" class={isActive("tarifs") ? "text-white" : "hover:text-white transition-colors"}>Tarifs</a>
+          <a href="/revendeur-iptv" class={isActive("revendeur") ? "text-white" : "hover:text-white transition-colors"}>Revendeur</a>
+          <a href="/contact" class={isActive("contact") ? "text-white" : "hover:text-white transition-colors"}>Contact</a>
+        </nav>
+        <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="hidden md:inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'header_link' });">Contact B2B</a>
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white" aria-label="Ouvrir le menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="flex-grow relative z-10">
+      <slot />
+      <RelatedPosts currentPath={Astro.url.pathname} />
+    </main>
+
+    <footer class="w-full border-t border-white/5 bg-[#080b12] relative z-10">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+          <div class="col-span-2 md:col-span-1">
+            <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+            <p class="text-slate-400 text-xs mt-3 leading-relaxed max-w-[200px]">Le partenaire B2B de confiance pour les revendeurs IPTV. Infrastructure premium, marges maximisées et support dédié 24/7.</p>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Solutions</h4>
+            <ul class="space-y-2">
+              <li><a href="/revendeur-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Programme Revendeur</a></li>
+              <li><a href="/panel-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Panel IPTV</a></li>
+              <li><a href="/services" class="text-xs text-slate-400 hover:text-indigo-400">Tous nos services</a></li>
+              <li><a href="/tarifs-grossiste-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Tarifs</a></li>
+              <li><a href="/credits-iptv-en-gros" class="text-xs text-slate-400 hover:text-indigo-400">Crédits en Gros</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Nos Serveurs</h4>
+            <ul class="space-y-2">
+              <li><a href="/serveurs" class="text-xs text-slate-400 hover:text-indigo-400">Tous les serveurs</a></li>
+              <li><a href="/serveurs/lion-ott" class="text-xs text-slate-400 hover:text-indigo-400">Lion OTT</a></li>
+              <li><a href="/serveurs/max-ott" class="text-xs text-slate-400 hover:text-indigo-400">Max OTT</a></li>
+              <li><a href="/serveurs/dream-4k" class="text-xs text-slate-400 hover:text-indigo-400">Dream 4K</a></li>
+              <li><a href="/serveurs/trex-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Trex IPTV</a></li>
+              <li><a href="/serveurs/magnum-ott" class="text-xs text-slate-400 hover:text-indigo-400">Magnum OTT</a></li>
+              <li><a href="/serveurs/pro-max" class="text-xs text-slate-400 hover:text-indigo-400">Pro Max</a></li>
+              <li><a href="/serveurs/dino-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Dino IPTV</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Ressources</h4>
+            <ul class="space-y-2">
+              <li><a href="/blog" class="text-xs text-slate-400 hover:text-indigo-400">Blog</a></li>
+              <li><a href="/blog/comment-choisir-un-fournisseur-iptv-grossiste-fiable" class="text-xs text-slate-400 hover:text-indigo-400">Choisir un fournisseur</a></li>
+              <li><a href="/blog/panel-iptv-revendeur-fonctionnalites-indispensables" class="text-xs text-slate-400 hover:text-indigo-400">Fonctionnalités panel</a></li>
+              <li><a href="/blog/credits-iptv-comment-calculer-sa-marge-revendeur" class="text-xs text-slate-400 hover:text-indigo-400">Calculer sa marge</a></li>
+              <li><a href="/blog/prix-panel-iptv-revendeur-rentabilite" class="text-xs text-slate-400 hover:text-indigo-400">Prix panel revendeur</a></li>
+              <li><a href="/faq" class="text-xs text-slate-400 hover:text-indigo-400">FAQ</a></li>
+              <li><a href="/comparatif-serveurs-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Comparatif Serveurs</a></li>
+              <li><a href="/guide-panel-iptv-revendeur" class="text-xs text-slate-400 hover:text-indigo-400">Guide Panel</a></li>
+              <li><a href="/comment-devenir-revendeur-iptv" class="text-xs text-slate-400 hover:text-indigo-400">Devenir Revendeur</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Entreprise</h4>
+            <ul class="space-y-2">
+              <li><a href="/contact" class="text-xs text-slate-400 hover:text-indigo-400">Contact</a></li>
+              <li><a href="/pourquoi-nous" class="text-xs text-slate-400 hover:text-indigo-400">Pourquoi nous</a></li>
+              <li><a href="/a-propos" class="text-xs text-slate-400 hover:text-indigo-400">À Propos</a></li>
+              <li><a href="/iptv-legal-france" class="text-xs text-slate-400 hover:text-indigo-400">IPTV Légal France</a></li>
+              <li><a href="/mentions-legales" class="text-xs text-slate-400 hover:text-indigo-400">Mentions Légales</a></li>
+              <li><a href="/cgv" class="text-xs text-slate-400 hover:text-indigo-400">CGV</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between">
+          <p class="text-[11px] text-slate-400">&copy; {new Date().getFullYear()} Grossiste IPTV. Tous droits réservés.</p>
+          <p class="text-[11px] text-slate-400 mt-1 md:mt-0">Plateforme indépendante de distribution de services de streaming.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        for (const el of reveals) {
+          const top = el.getBoundingClientRect().top;
+          if (top < window.innerHeight - 50) el.classList.add("active");
+        }
+      }
+      window.addEventListener("scroll", reveal);
+      reveal();
+    </script>
+
+    <div id="mobile-menu" class="md:hidden fixed inset-0 z-[60] pointer-events-none">
+      <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
+      <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
+        <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
+          <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+          <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white" aria-label="Fermer le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <nav class="px-4 py-5 flex-1 space-y-1">
+          <a href="/" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Accueil</a>
+          <a href="/serveurs" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Serveurs</a>
+          <a href="/services" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Services</a>
+          <a href="/tarifs-grossiste-iptv" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Tarifs</a>
+          <a href="/revendeur-iptv" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Revendeur IPTV</a>
+          <a href="/panel-iptv" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Panel IPTV</a>
+          <a href="/comparatif-serveurs-iptv" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Comparatif Serveurs</a>
+          <a href="/blog" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Blog</a>
+          <a href="/faq" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">FAQ</a>
+          <a href="/contact" class="flex items-center h-11 px-3 rounded-xl text-slate-300 hover:bg-white/5 hover:text-white">Contact</a>
+        </nav>
+        <div class="px-4 pb-6 shrink-0">
+          <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-12 rounded-xl text-sm" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'mobile_menu_link' });">
+            <WhatsAppIcon class="w-4 h-4" />
+            Contact B2B WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mMenuBtn = document.getElementById('mobile-menu-btn');
+      const mCloseBtn = document.getElementById('mobile-close-btn');
+      const mMenu = document.getElementById('mobile-menu');
+      const mBackdrop = document.getElementById('mobile-backdrop');
+      const mDrawer = document.getElementById('mobile-drawer');
+      function openNav() { mMenu?.classList.remove('pointer-events-none'); mBackdrop?.classList.remove('opacity-0'); mBackdrop?.classList.add('opacity-100'); mDrawer?.classList.remove('translate-x-full'); document.body.style.overflow = 'hidden'; }
+      function closeNav() { mBackdrop?.classList.add('opacity-0'); mBackdrop?.classList.remove('opacity-100'); mDrawer?.classList.add('translate-x-full'); document.body.style.overflow = ''; setTimeout(() => mMenu?.classList.add('pointer-events-none'), 300); }
+      mMenuBtn?.addEventListener('click', openNav);
+      mCloseBtn?.addEventListener('click', closeNav);
+      mBackdrop?.addEventListener('click', closeNav);
+      mMenu?.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
+    </script>
+
+    <a 
+      href="https://wa.me/212782389820" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'sticky_mobile_button' });" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 flex items-center justify-center transition-transform hover:scale-110 group"
+      aria-label="Contactez-nous sur WhatsApp"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.996 0C5.372 0 0 5.373 0 12.001c0 2.128.553 4.204 1.604 6.024L.152 24l6.134-1.607a11.95 11.95 0 005.71 1.455h.005c6.621 0 11.996-5.373 11.996-12.001S18.618 0 11.996 0zm0 21.847h-.004a9.972 9.972 0 01-5.084-1.385l-.364-.216-3.778.991.999-3.684-.237-.377a9.957 9.957 0 01-1.527-5.328c0-5.503 4.48-9.985 9.995-9.985 2.667 0 5.172 1.039 7.057 2.927 1.884 1.889 2.922 4.398 2.922 7.067.001 5.502-4.478 9.99-9.977 9.99zm5.495-7.509c-.302-.151-1.782-.88-2.059-.98-.277-.101-.48-.151-.681.151-.202.302-.78 1.006-.957 1.208-.176.202-.353.226-.655.075-.302-.151-1.272-.469-2.423-1.496-.895-.8-1.5-1.788-1.677-2.091-.176-.302-.019-.465.132-.616.136-.136.302-.353.453-.529.151-.176.202-.302.302-.503.101-.202.05-.378-.025-.529-.075-.151-.681-1.644-.932-2.251-.246-.593-.497-.512-.681-.522-.176-.008-.378-.008-.58-.008-.202 0-.529.075-.806.378-.277.302-1.057 1.033-1.057 2.518 0 1.485 1.082 2.921 1.233 3.123.151.202 2.128 3.25 5.155 4.553 2.057.886 2.809.954 3.842.8 1.121-.166 3.128-1.278 3.568-2.516.44-1.238.44-2.298.309-2.518-.13-.222-.482-.324-.784-.476z"/>
+      </svg>
+      <span class="absolute -top-10 right-0 bg-white text-gray-900 text-xs font-bold px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Devis Rapide</span>
+    </a>
+  </body>
+</html>

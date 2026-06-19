@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://grossisteiptv.com/sitemap-index.xml
+Sitemap: https://grossisteiptv.com/sitemap.xml

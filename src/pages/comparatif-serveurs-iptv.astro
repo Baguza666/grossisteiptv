@@ -1,0 +1,144 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+
+const servers = [
+  { slug: "lion-ott", name: "Lion OTT", emoji: "🦁", positioning: "Best-seller débutant", chaines: "20 000+", vod: "60 000", series: "15 000+", stability: "Bonne", vodUpdate: "Quotidienne", bestFor: "Revendeurs débutants — interface simple, marge confortable, qualité fiable.", linkClass: "text-indigo-400 hover:text-indigo-300", positionClass: "text-indigo-400" },
+  { slug: "max-ott", name: "Max OTT", emoji: "⚡", positioning: "Référence premium", chaines: "15 000+", vod: "80 000+", series: "20 000+", stability: "Excellente", vodUpdate: "Quotidienne", bestFor: "Clientèle exigeante, événements sportifs majeurs, profils premium recherchant le top.", linkClass: "text-emerald-400 hover:text-emerald-300", positionClass: "text-emerald-400" },
+  { slug: "trex-iptv", name: "Trex IPTV", emoji: "🦖", positioning: "Catalogue maximal", chaines: "22 000+", vod: "70 000+", series: "25 000+", stability: "Très bonne", vodUpdate: "Plusieurs fois/jour", bestFor: "Couverture internationale, clients multilingues, demandes de chaînes obscures.", linkClass: "text-cyan-400 hover:text-cyan-300", positionClass: "text-cyan-400" },
+  { slug: "dream-4k", name: "Dream 4K", emoji: "💎", positioning: "Ultra HD pur", chaines: "12 000+", vod: "50 000+", series: "15 000+", stability: "Excellente", vodUpdate: "Quotidienne", bestFor: "Foyers équipés 4K, clientèle premium, focus qualité plutôt que quantité.", linkClass: "text-violet-400 hover:text-violet-300", positionClass: "text-violet-400" },
+  { slug: "magnum-ott", name: "Magnum OTT", emoji: "🎯", positioning: "Stabilité élite", chaines: "16 000+", vod: "65 000+", series: "18 000+", stability: "Élite", vodUpdate: "Quotidienne", bestFor: "Revendeurs intolérants aux freezes, niveau d'exigence très élevé sur l'uptime.", linkClass: "text-amber-400 hover:text-amber-300", positionClass: "text-amber-400" },
+  { slug: "pro-max", name: "Pro Max", emoji: "🔥", positioning: "Volume élevé", chaines: "18 000+", vod: "70 000+", series: "20 000+", stability: "Très bonne", vodUpdate: "Quotidienne", bestFor: "Revendeurs gérant 100+ clients, agences, infrastructure dimensionnée pour le volume.", linkClass: "text-rose-400 hover:text-rose-300", positionClass: "text-rose-400" },
+  { slug: "dino-iptv", name: "Dino IPTV", emoji: "🦕", positioning: "Polyvalent rapport qualité/prix", chaines: "17 000+", vod: "55 000+", series: "16 000+", stability: "Très bonne", vodUpdate: "Quotidienne", bestFor: "Le bon compromis tous publics, stable, catalogue complet, prix maîtrisé.", linkClass: "text-emerald-400 hover:text-emerald-300", positionClass: "text-emerald-400" },
+];
+---
+
+<SiteLayout
+  title="Comparatif Serveurs IPTV : Lion, Max, Trex, Dream, Magnum, Pro Max, Dino"
+  description="Comparatif détaillé des 7 serveurs IPTV en gros : Lion OTT, Max OTT, Trex IPTV, Dream 4K, Magnum OTT, Pro Max, Dino IPTV. Stabilité, catalogue, positionnement et meilleurs cas d'usage."
+  canonical="https://grossisteiptv.com/comparatif-serveurs-iptv/"
+  active="serveurs"
+>
+
+  <section class="max-w-5xl mx-auto px-6 pt-20 lg:pt-28 pb-12 text-center reveal">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase mb-6">Comparatif détaillé</div>
+    <h1 class="text-4xl md:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight mb-6">
+      Comparatif des Serveurs IPTV <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">pour Revendeurs</span>
+    </h1>
+    <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+      Sept serveurs élite, sept positionnements distincts. Voici un comparatif honnête pour vous orienter selon votre clientèle cible et votre niveau d'exigence.
+    </p>
+  </section>
+
+  {/* COMPARISON TABLE */}
+  <section class="max-w-7xl mx-auto px-6 py-12 reveal">
+    <div class="bg-[#0f1420] border border-white/5 rounded-2xl overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm min-w-[800px]">
+          <thead class="bg-white/5">
+            <tr>
+              <th class="text-left px-5 py-4 font-bold text-slate-300">Serveur</th>
+              <th class="text-left px-5 py-4 font-bold text-slate-300">Positionnement</th>
+              <th class="text-center px-5 py-4 font-bold text-slate-300">Chaînes</th>
+              <th class="text-center px-5 py-4 font-bold text-slate-300">VOD</th>
+              <th class="text-center px-5 py-4 font-bold text-slate-300">Séries</th>
+              <th class="text-center px-5 py-4 font-bold text-slate-300">Stabilité</th>
+              <th class="text-center px-5 py-4 font-bold text-slate-300">MAJ VOD</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5">
+            {servers.map((s) => (
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="px-5 py-4">
+                  <a href={`/serveurs/${s.slug}`} class="flex items-center gap-2 font-bold text-white hover:text-indigo-400">
+                    <span class="text-lg">{s.emoji}</span>{s.name}
+                  </a>
+                </td>
+                <td class="px-5 py-4 text-slate-400 text-xs">{s.positioning}</td>
+                <td class="px-5 py-4 text-center text-slate-300">{s.chaines}</td>
+                <td class="px-5 py-4 text-center text-slate-300">{s.vod}</td>
+                <td class="px-5 py-4 text-center text-slate-300">{s.series}</td>
+                <td class="px-5 py-4 text-center text-emerald-400 text-xs font-semibold">{s.stability}</td>
+                <td class="px-5 py-4 text-center text-slate-400 text-xs">{s.vodUpdate}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  {/* DETAIL CARDS */}
+  <section class="max-w-6xl mx-auto px-6 py-12 reveal">
+    <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-center mb-3">Quel serveur pour quel revendeur ?</h2>
+    <p class="text-slate-400 text-center text-sm mb-10 max-w-2xl mx-auto">Recommandations honnêtes selon votre profil client.</p>
+    <div class="grid md:grid-cols-2 gap-5">
+      {servers.map((s) => (
+        <div class="bg-[#0f1420] border border-white/5 rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl">{s.emoji}</div>
+            <div>
+              <h3 class="text-lg font-bold">{s.name}</h3>
+              <p class={`text-xs ${s.positionClass} font-semibold`}>{s.positioning}</p>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">{s.bestFor}</p>
+          <a href={`/serveurs/${s.slug}`} class={`inline-flex items-center gap-2 text-sm font-semibold ${s.linkClass}`}>
+            Fiche détaillée {s.name}
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* DECISION HELPER */}
+  <section class="max-w-4xl mx-auto px-6 py-12 reveal">
+    <div class="bg-gradient-to-br from-indigo-950/30 to-[#0f1420] border border-indigo-500/20 rounded-3xl p-8 md:p-10">
+      <h2 class="text-2xl font-bold mb-6 text-center">Aide rapide à la décision</h2>
+      <div class="space-y-3">
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">🎯 <strong>Vous démarrez (0-20 clients) ?</strong></p>
+          <a href="/serveurs/lion-ott" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold">Lion OTT →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">⚡ <strong>Clientèle exigeante / sport premium ?</strong></p>
+          <a href="/serveurs/max-ott" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Max OTT →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">🌍 <strong>Catalogue international (chaînes étrangères) ?</strong></p>
+          <a href="/serveurs/trex-iptv" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold">Trex IPTV →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">💎 <strong>Foyers équipés 4K, focus qualité ?</strong></p>
+          <a href="/serveurs/dream-4k" class="text-violet-400 hover:text-violet-300 text-sm font-semibold">Dream 4K →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">🛡️ <strong>Tolérance zéro sur les freezes ?</strong></p>
+          <a href="/serveurs/magnum-ott" class="text-amber-400 hover:text-amber-300 text-sm font-semibold">Magnum OTT →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">📊 <strong>Volume élevé (100+ clients) ?</strong></p>
+          <a href="/serveurs/pro-max" class="text-rose-400 hover:text-rose-300 text-sm font-semibold">Pro Max →</a>
+        </div>
+        <div class="bg-[#0f1420] border border-white/5 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <p class="text-sm text-slate-300">⚖️ <strong>Le bon compromis pour tous publics ?</strong></p>
+          <a href="/serveurs/dino-iptv" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Dino IPTV →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="max-w-4xl mx-auto px-6 pb-24 reveal">
+    <div class="bg-gradient-to-br from-emerald-900/30 to-cyan-900/20 border border-emerald-500/20 rounded-3xl p-10 md:p-14 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3">Hésitant entre plusieurs serveurs ?</h2>
+      <p class="text-slate-400 text-sm mb-8 max-w-md mx-auto">Décrivez-nous votre clientèle, nous vous orientons vers le serveur le plus adapté.</p>
+      <a href="https://wa.me/212782389820?text=Bonjour%2C%20je%20veux%20un%20conseil%20pour%20choisir%20mon%20serveur%20IPTV" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold px-8 py-4 rounded-xl" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'content_cta' });">
+        <WhatsAppIcon class="w-5 h-5" />
+        Demander Conseil
+      </a>
+    </div>
+  </section>
+
+</SiteLayout>

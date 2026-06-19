@@ -14,6 +14,21 @@ const phone = "212782389820";
           gtag('js', new Date());
           gtag('config', 'G-J0C0H0WXR9');
         </script>
+        <!-- Microsoft Clarity -->
+        <script is:inline>
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "wpzq3c0mnu");
+        </script>
+        <!-- WhatsApp CTA → Clarity event -->
+        <script is:inline>
+          document.addEventListener('click', function(e) {
+            var a = e.target && e.target.closest && e.target.closest('a[href*="wa.me"]');
+            if (a && window.clarity) window.clarity('event', 'whatsapp_click');
+          }, { capture: true });
+        </script>
     <meta charset="utf-8" />
         <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
@@ -49,8 +64,7 @@ const phone = "212782389820";
 
     <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B0F19]/60 backdrop-blur-2xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" class="text-xl font-black tracking-tighter text-white">
-          <img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" />
+        <a href="/" class="text-xl font-black tracking-tighter text-white" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" />
         </a>
         <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-400">
           <a href="/" class="hover:text-white transition-colors duration-200">Accueil</a>
@@ -192,13 +206,13 @@ const phone = "212782389820";
       <div class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div class="col-span-2 md:col-span-1">
-            <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+            <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
             <p class="text-slate-600 text-xs mt-3 leading-relaxed max-w-[200px]">Le partenaire B2B de confiance pour les revendeurs IPTV. Infrastructure premium, marges maximisées et support dédié 24/7.</p>
           </div>
           <div>
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serveurs Premium</h4>
             <ul class="space-y-2">
-              <li><a href="/serveurs/orca-pro-max" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Orca Pro Max</a></li>
+              <li><a href="/serveurs/pro-max" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Pro Max</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Avatar Pro</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Trex IPTV</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Tous les serveurs →</a></li>
@@ -219,7 +233,7 @@ const phone = "212782389820";
           <div>
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Contact B2B</h4>
             <ul class="space-y-2">
-              <li><a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">WhatsApp Pro</a></li>
+              <li><a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'footer_link' });">WhatsApp Pro</a></li>
               <li><span class="text-xs text-slate-700">B2B uniquement — pas de vente au détail</span></li>
               <li><a href="/a-propos" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">À Propos</a></li>
               <li><a href="/mentions-legales" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Mentions Légales</a></li>
@@ -238,7 +252,7 @@ const phone = "212782389820";
       <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
       <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
         <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
-          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+          <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
           <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Fermer le menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>

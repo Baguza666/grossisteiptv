@@ -1,0 +1,96 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import WhatsAppIcon from "../../components/icons/WhatsAppIcon.astro";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Panel IPTV revendeur : les 10 fonctionnalités indispensables",
+    "description": "La checklist des fonctions sans lesquelles un panel ne mérite pas d'être utilisé en production.",
+    "author": { "@type": "Organization", "name": "Grossiste IPTV" },
+    "publisher": { "@type": "Organization", "name": "Grossiste IPTV", "logo": { "@type": "ImageObject", "url": "https://grossisteiptv.com/grossisteiptvlogo.png" } },
+    "mainEntityOfPage": "https://grossisteiptv.com/blog/panel-iptv-revendeur-fonctionnalites-indispensables/",
+    "datePublished": "2026-04-29",
+    "inLanguage": "fr-FR",
+  },
+];
+---
+
+<SiteLayout
+  title="Panel IPTV Revendeur : 10 Fonctionnalités Indispensables 2026"
+  description="La checklist complète des fonctions qu'un panel IPTV revendeur doit absolument proposer : codes test, sous-revendeurs, statistiques, suspension à distance."
+  canonical="https://grossisteiptv.com/blog/panel-iptv-revendeur-fonctionnalites-indispensables/"
+  jsonLd={jsonLd}
+>
+
+  <article class="max-w-3xl mx-auto px-6 pt-20 lg:pt-28 pb-12 reveal">
+    <p class="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4"><a href="/blog" class="hover:underline">Blog</a> / <a href="/blog/panel-iptv" class="hover:underline">Panel IPTV</a></p>
+    <h1 class="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight mb-6">Panel IPTV revendeur : les 10 fonctionnalités indispensables</h1>
+    <p class="text-slate-400 text-sm">Publié le 29 avril 2026 · 9 min de lecture</p>
+  </article>
+
+  <article class="max-w-3xl mx-auto px-6 py-6 reveal">
+    <p class="text-lg text-slate-300 leading-relaxed mb-6">Un panel IPTV revendeur n'est pas qu'un formulaire de création de comptes. C'est l'outil de travail quotidien qui détermine votre productivité, votre temps de gestion et votre capacité à scaler. Voici les 10 fonctionnalités sans lesquelles un panel ne mérite pas d'être utilisé en production.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">1. Création de ligne client en moins de 30 secondes</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Un panel correct vous permet de créer une nouvelle ligne (Xtream Codes ou M3U) en remplissant uniquement username, password et durée. Tout le reste (URL serveur, paramètres techniques) doit être préconfiguré. Si la création prend plus de 30 secondes, vous perdez du temps à chaque vente.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">2. Codes test illimités et automatisés</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Le code test 24h ou 48h est l'outil de conversion le plus puissant du revendeur. Un bon panel permet d'en générer de manière illimitée et instantanée, avec une option de suppression automatique à expiration pour libérer de la bande passante. Sans codes test, vous vendez à l'aveugle.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">3. Renouvellement en un clic avec préservation des identifiants</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Quand un client renouvelle, ses identifiants doivent rester strictement identiques — le client ne devrait rien avoir à reconfigurer côté application. Un panel qui force la création d'une nouvelle ligne à chaque renouvellement génère du churn par friction.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">4. Statistiques de connexion par ligne</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Vous devez voir : dernière connexion (date/heure), IP utilisée, application client, durée totale de visionnage. Ces données vous permettent de détecter les comptes partagés (plusieurs IPs simultanées), les clients inactifs (à relancer) et les abus (consommation anormale).</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">5. Suspension instantanée à distance</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Un client en impayé ? Vous devez pouvoir suspendre sa ligne en un clic, sans la supprimer. Et la réactiver dès que le client régularise. Un panel sans cette fonction vous force à supprimer puis recréer — perte de l'historique, perte des identifiants, frustration client.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">6. Tableau de bord des expirations</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Vue d'ensemble triable : qui expire dans 7 jours, 15 jours, 30 jours. Indispensable pour relancer en amont et préserver la rétention. Sans ce tableau, vous perdez des clients par simple oubli de relance.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">7. Sous-revendeurs (multi-tenants)</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Si vous gérez plusieurs commerciaux ou avez vous-même des partenaires affiliés, vous devez pouvoir créer des sous-comptes revendeur avec leur propre stock de crédits. Cette fonction est généralement réservée aux paliers volume (100+ crédits chez nous), mais c'est un multiplicateur de croissance majeur.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">8. Notifications proactives sur incidents</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Quand un serveur a un souci, vous devez être prévenu <strong class="text-slate-300">avant</strong> vos clients. Idéalement par WhatsApp ou push, avec ETA de résolution. Un panel sans système de notification serveur vous laisse découvrir les pannes par les plaintes clients — désastreux pour votre crédibilité.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">9. Compatibilité Xtream Codes + M3U universel</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Chaque ligne créée doit générer automatiquement deux formats de connexion : Xtream Codes (URL + username + password) compatible Smarters Pro / IBO / TiviMate, et lien M3U universel pour les boîtiers Mag, Enigma2 et VLC. Un panel qui ne propose qu'un format vous coupe d'une partie du marché.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-3 text-white">10. Export CSV de votre base clients</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Vous devez pouvoir exporter à tout moment la liste de vos clients (pseudonymisée si vous le souhaitez), leurs dates d'expiration et leur historique. Cette fonction est votre filet de sécurité si jamais vous devez <a href="/migration-revendeur-iptv" class="text-indigo-400 hover:text-indigo-300">migrer vers un autre fournisseur</a>. Un panel qui retient vos données fait de vous son otage.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">En résumé</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Un panel IPTV digne de ce nom est un outil de gestion d'entreprise, pas un formulaire bricolé. Avant de vous engager avec un fournisseur, demandez à voir son panel en démonstration et vérifiez la présence de ces 10 fonctions. Si l'une manque, c'est un signal de fragilité opérationnelle qui se paiera plus tard.</p>
+    <p class="text-slate-400 leading-relaxed mb-4">Notre panel revendeur basé sur Xtream UI couvre l'intégralité de cette checklist. <a href="/panel-iptv" class="text-indigo-400 hover:text-indigo-300">Voir la fiche complète du panel IPTV</a>.</p>
+  </article>
+
+  <section class="max-w-3xl mx-auto px-6 py-12 reveal">
+    <div class="bg-gradient-to-br from-indigo-900/30 to-cyan-900/20 border border-indigo-500/20 rounded-3xl p-8 text-center">
+      <h2 class="text-xl md:text-2xl font-bold mb-2">Voir notre panel en démonstration</h2>
+      <p class="text-slate-400 text-sm mb-6 max-w-md mx-auto">Demandez une démo live de 15 minutes sur WhatsApp.</p>
+      <a href="https://wa.me/212782389820?text=Bonjour%2C%20je%20veux%20une%20d%C3%A9mo%20du%20panel%20IPTV" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold px-7 py-3.5 rounded-xl text-sm" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'content_cta' });">
+        <WhatsAppIcon class="w-4 h-4" />
+        Demander une démo
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 pb-24 reveal">
+    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Lire aussi</h3>
+    <div class="grid md:grid-cols-2 gap-3">
+      <a href="/blog/comment-choisir-un-fournisseur-iptv-grossiste-fiable" class="bg-[#0f1420] border border-white/5 hover:border-emerald-500/20 rounded-xl p-5 transition-all">
+        <p class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">Revendeur IPTV</p>
+        <h4 class="text-sm font-bold text-white">Comment choisir un fournisseur IPTV grossiste fiable</h4>
+      </a>
+      <a href="/blog/credits-iptv-comment-calculer-sa-marge-revendeur" class="bg-[#0f1420] border border-white/5 hover:border-amber-500/20 rounded-xl p-5 transition-all">
+        <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">Crédits IPTV</p>
+        <h4 class="text-sm font-bold text-white">Comment calculer sa marge revendeur</h4>
+      </a>
+    </div>
+  </section>
+
+</SiteLayout>

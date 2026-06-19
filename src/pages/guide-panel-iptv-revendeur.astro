@@ -3,7 +3,7 @@ import "../styles/global.css";
 const phone = "212782389820";
 const servers = [
   { name: "Lion OTT", rating: "4.9", tv: "20 000+", vod: "60 000+", series: "15 000+", uptime: "99.9%", highlight: "Stabilité 4K HEVC", best: false },
-  { name: "Orca Pro Max", rating: "5.0", tv: "18 000+", vod: "80 000+", series: "22 000+", uptime: "99.9%", highlight: "Notre bestseller", best: true },
+  { name: "Pro Max", rating: "5.0", tv: "18 000+", vod: "80 000+", series: "22 000+", uptime: "99.9%", highlight: "Notre bestseller", best: true },
   { name: "Max OTT", rating: "4.8", tv: "15 000+", vod: "80 000+", series: "20 000+", uptime: "99.8%", highlight: "Plus grande VOD", best: false },
   { name: "Dream 4K", rating: "4.7", tv: "18 500+", vod: "50 000+", series: "10 000+", uptime: "99.7%", highlight: "RAW non compressé", best: false },
   { name: "Dino IPTV", rating: "4.9", tv: "19 000+", vod: "55 000+", series: "12 000+", uptime: "99.9%", highlight: "Zapping ultra-rapide", best: false },
@@ -21,6 +21,21 @@ const servers = [
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-J0C0H0WXR9');
+        </script>
+        <!-- Microsoft Clarity -->
+        <script is:inline>
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "wpzq3c0mnu");
+        </script>
+        <!-- WhatsApp CTA → Clarity event -->
+        <script is:inline>
+          document.addEventListener('click', function(e) {
+            var a = e.target && e.target.closest && e.target.closest('a[href*="wa.me"]');
+            if (a && window.clarity) window.clarity('event', 'whatsapp_click');
+          }, { capture: true });
         </script>
     <meta charset="utf-8" />
         <link rel="icon" type="image/png" href="/favicon.png" />
@@ -102,7 +117,7 @@ const servers = [
 
     <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B0F19]/60 backdrop-blur-2xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" class="text-xl font-black tracking-tighter text-white"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" /></a>
+        <a href="/" class="text-xl font-black tracking-tighter text-white" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-7 w-auto" /></a>
         <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-400">
           <a href="/" class="hover:text-white transition-colors duration-200">Accueil</a>
           <a href="/serveurs" class="hover:text-white transition-colors duration-200">Serveurs</a>
@@ -137,7 +152,7 @@ const servers = [
           </div>
           <a href="/a-propos" class="hover:text-white transition-colors duration-200">À Propos</a>
         </nav>
-        <a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+        <a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'header_link' });">
           Contact B2B
         </a>
         <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Ouvrir le menu">
@@ -159,6 +174,14 @@ const servers = [
         <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-3xl">
           Tout ce qu'un revendeur IPTV professionnel en France doit savoir pour choisir son panel, configurer Xtream UI, sélectionner les bons serveurs et maximiser ses marges. Guide mis à jour en avril 2026.
         </p>
+        <div class="bg-gradient-to-r from-gray-900 to-gray-800 border-l-4 border-blue-500 rounded-r-lg p-6 my-8 shadow-md">
+          <h3 class="text-xl font-bold text-white mb-2">🚀 Prêt à lancer votre business ?</h3>
+          <p class="text-gray-300">
+            Vous savez déjà comment fonctionne un panel ? Ne perdez plus de temps avec la théorie. Découvrez notre 
+            <a href="/panel-iptv/" class="text-blue-400 font-bold underline hover:text-blue-300 transition-colors">Panel IPTV Revendeur</a> 
+            et commencez à générer des accès dès aujourd'hui avec 100% de marge.
+          </p>
+        </div>
         <div class="flex flex-wrap gap-4 mb-8">
           <a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300">
             Démarrer — WhatsApp
@@ -234,7 +257,7 @@ const servers = [
             {[
               {
                 profile: "Clients familiaux (France, séries, sport)",
-                reco: "Lion OTT ou Orca Pro Max",
+                reco: "Lion OTT ou Pro Max",
                 why: "Excellente stabilité, chaînes françaises complètes (TF1, M6, Canal+, beIN Sports), VOD francophone riche. Uptime 99.9%. Idéal pour une clientèle exigeante."
               },
               {
@@ -357,7 +380,7 @@ const servers = [
           <div class="space-y-3">
             {[
               { step: "1", title: "Choisissez votre grossiste B2B", desc: "Optez pour un grossiste spécialisé IPTV (comme nous) plutôt qu'un revendeur particulier. Le prix par crédit sera plus bas et l'infrastructure plus stable. Voir notre page grossiste IPTV France." },
-              { step: "2", title: "Sélectionnez 1 ou 2 serveurs de départ", desc: "Ne commencez pas avec 7 serveurs. Choisissez-en 1 principal (Lion OTT ou Orca Pro Max) et éventuellement 1 budget (Trex IPTV). Maîtrisez-les avant d'étendre." },
+              { step: "2", title: "Sélectionnez 1 ou 2 serveurs de départ", desc: "Ne commencez pas avec 7 serveurs. Choisissez-en 1 principal (Lion OTT ou Pro Max) et éventuellement 1 budget (Trex IPTV). Maîtrisez-les avant d'étendre." },
               { step: "3", title: "Achetez un stock initial de crédits", desc: "50 à 100 crédits pour démarrer. Cela représente 50 à 100 clients potentiels. Rechargez au fur et à mesure — les crédits n'expirent pas." },
               { step: "4", title: "Testez pendant 48h avant de vendre", desc: "Créez 3 lignes de test sur différents appareils (TV, mobile, PC). Vérifiez la qualité des chaînes, le chargement VOD, la stabilité des flux sport en live." },
               { step: "5", title: "Fixez votre grille tarifaire", desc: "Positionnez-vous entre le marché gris (10–20€) et la valeur perçue premium (80–100€). La majorité des revendeurs stables se positionnent entre 50€ et 80€/mois." },
@@ -443,7 +466,7 @@ const servers = [
       <div class="grid sm:grid-cols-2 gap-3">
             <a href="/credits-iptv-en-gros" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Acheter des Crédits IPTV en Gros — Tarifs revendeurs</span></a>
             <a href="/xtream-ui-panel-revendeur" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Xtream UI Panel Revendeur — Guide de configuration</span></a>
-            <a href="/serveurs/orca-pro-max" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Panel Revendeur Orca Pro Max — Tarifs et accès B2B</span></a>
+            <a href="/serveurs/pro-max" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Panel Revendeur Pro Max — Tarifs et accès B2B</span></a>
             <a href="/qu-est-ce-qu-un-panel-iptv" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Qu'est-ce qu'un Panel IPTV ? Explication complète</span></a>
             <a href="/comment-devenir-revendeur-iptv" class="flex items-start gap-3 bg-[#0D1117] border border-white/8 rounded-xl p-4 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group"><span class="text-indigo-400 mt-0.5 shrink-0 text-sm group-hover:translate-x-0.5 transition-transform">→</span><span class="text-sm text-slate-300 group-hover:text-white transition-colors leading-snug">Comment devenir revendeur IPTV en France en 2026</span></a>
       </div>
@@ -454,13 +477,13 @@ const servers = [
       <div class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div class="col-span-2 md:col-span-1">
-            <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+            <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
             <p class="text-slate-600 text-xs mt-3 leading-relaxed max-w-[200px]">Le partenaire B2B de confiance pour les revendeurs IPTV. Infrastructure premium, marges maximisées et support dédié 24/7.</p>
           </div>
           <div>
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Nos Serveurs</h4>
             <ul class="space-y-2">
-              <li><a href="/serveurs/orca-pro-max" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Orca Pro Max</a></li>
+              <li><a href="/serveurs/pro-max" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Pro Max</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Avatar Pro</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Panel Trex IPTV</a></li>
               <li><a href="/serveurs" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Tous les serveurs →</a></li>
@@ -481,7 +504,7 @@ const servers = [
           <div>
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Contact B2B</h4>
             <ul class="space-y-2">
-              <li><a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">WhatsApp Pro</a></li>
+              <li><a href={`https://wa.me/${phone}`} target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'footer_link' });">WhatsApp Pro</a></li>
               <li><span class="text-xs text-slate-700">B2B uniquement — pas de vente au détail</span></li>
               <li><a href="/a-propos" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">À Propos</a></li>
               <li><a href="/mentions-legales" class="text-xs text-slate-600 hover:text-indigo-400 transition-colors">Mentions Légales</a></li>
@@ -500,7 +523,7 @@ const servers = [
       <div id="mobile-backdrop" class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300"></div>
       <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-[300px] max-w-[85vw] bg-[#0D1117] border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto">
         <div class="flex items-center justify-between px-5 h-16 border-b border-white/10 shrink-0">
-          <a href="/" class="flex items-center"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
+          <a href="/" class="flex items-center" aria-label="Accueil Grossiste IPTV"><img src="/grossisteiptvlogo.png" alt="Grossiste IPTV" width="519" height="69" class="h-6 w-auto" /></a>
           <button id="mobile-close-btn" class="flex items-center justify-center w-10 h-10 rounded-lg text-slate-300 hover:text-white transition-colors" aria-label="Fermer le menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
@@ -526,7 +549,7 @@ const servers = [
           </div>
         </nav>
         <div class="px-4 pb-6 shrink-0">
-          <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-12 rounded-xl transition-colors text-sm">
+          <a href="https://wa.me/212782389820" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-12 rounded-xl transition-colors text-sm" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'mobile_menu_link' });">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.328-.724-6.025-1.964a.75.75 0 00-.652-.13l-3.14 1.051 1.052-3.14a.75.75 0 00-.13-.653A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
             Contact B2B WhatsApp
           </a>

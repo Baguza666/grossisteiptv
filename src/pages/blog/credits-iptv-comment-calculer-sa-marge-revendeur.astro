@@ -1,0 +1,120 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import WhatsAppIcon from "../../components/icons/WhatsAppIcon.astro";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Crédits IPTV : comment calculer sa marge revendeur ?",
+    "description": "Méthode chiffrée pour calculer votre marge brute par client, votre point mort et votre rentabilité par palier de volume.",
+    "author": { "@type": "Organization", "name": "Grossiste IPTV" },
+    "publisher": { "@type": "Organization", "name": "Grossiste IPTV", "logo": { "@type": "ImageObject", "url": "https://grossisteiptv.com/grossisteiptvlogo.png" } },
+    "mainEntityOfPage": "https://grossisteiptv.com/blog/credits-iptv-comment-calculer-sa-marge-revendeur/",
+    "datePublished": "2026-04-29",
+    "inLanguage": "fr-FR",
+  },
+];
+---
+
+<SiteLayout
+  title="Crédits IPTV : Comment Calculer sa Marge Revendeur ? Méthode 2026"
+  description="Méthode chiffrée pour calculer votre marge brute par client, votre point mort et votre rentabilité par palier de volume. Exemples chiffrés inclus."
+  canonical="https://grossisteiptv.com/blog/credits-iptv-comment-calculer-sa-marge-revendeur/"
+  jsonLd={jsonLd}
+>
+
+  <article class="max-w-3xl mx-auto px-6 pt-20 lg:pt-28 pb-12 reveal">
+    <p class="text-xs font-bold text-amber-400 uppercase tracking-widest mb-4"><a href="/blog" class="hover:underline">Blog</a> / <a href="/blog/credits-iptv" class="hover:underline">Crédits IPTV</a></p>
+    <h1 class="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight mb-6">Crédits IPTV : comment calculer sa marge revendeur ?</h1>
+    <p class="text-slate-400 text-sm">Publié le 29 avril 2026 · 7 min de lecture</p>
+  </article>
+
+  <article class="max-w-3xl mx-auto px-6 py-6 reveal">
+    <p class="text-lg text-slate-300 leading-relaxed mb-6">La marge revendeur IPTV n'est pas un mystère — c'est une équation à trois variables : prix d'achat unitaire, prix de revente client, volume mensuel. Voici la méthode pour calculer votre rentabilité réelle, sans le bullshit marketing du « jusqu'à 80 % de marge ».</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Étape 1 : Connaître votre prix d'achat unitaire</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Votre prix unitaire dépend du palier de volume. À titre d'exemple sur le serveur Lion OTT (consulter <a href="/tarifs-grossiste-iptv" class="text-amber-400 hover:text-amber-300">la grille complète</a>) :</p>
+    <ul class="text-slate-400 text-sm space-y-1.5 list-disc ml-5 mb-6">
+      <li>10 crédits → 130€ → soit <strong class="text-white">13,00€/crédit</strong></li>
+      <li>50 crédits → 475€ → soit <strong class="text-white">9,50€/crédit</strong></li>
+      <li>100 crédits → 900€ → soit <strong class="text-white">9,00€/crédit</strong></li>
+    </ul>
+    <p class="text-slate-400 leading-relaxed mb-4">Plus vous achetez, plus le prix unitaire baisse. C'est la mécanique du tarif dégressif.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Étape 2 : Définir votre prix de revente client</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Le prix client final dépend de votre marché et de la valeur perçue. Fourchettes typiques constatées en France :</p>
+    <ul class="text-slate-400 text-sm space-y-1.5 list-disc ml-5 mb-6">
+      <li>Marché low-cost (Telegram, particuliers) : 50–70€ / 12 mois</li>
+      <li>Marché standard (proximité, bouche-à-oreille) : 70–100€ / 12 mois</li>
+      <li>Marché premium (positionnement service complet) : 100–150€ / 12 mois</li>
+    </ul>
+    <p class="text-slate-400 leading-relaxed mb-4">Si vous vendez en-dessous de 60€/an, vous brûlez votre marge sur des clients peu fidèles. Si vous vendez au-dessus de 120€/an, vous devez pouvoir justifier la valeur (support pro, configuration, garantie).</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Étape 3 : Calculer votre marge brute par client</h2>
+    <div class="bg-[#0f1420] border border-white/10 rounded-2xl p-6 my-6">
+      <p class="text-sm font-mono text-amber-300 mb-2">Marge brute = Prix de revente − Prix d'achat unitaire</p>
+      <p class="text-slate-400 text-sm">Exemple concret : achat à 9€/crédit (palier 100), revente à 80€/an = <strong class="text-white">71€ de marge brute par client</strong>.</p>
+    </div>
+    <p class="text-slate-400 leading-relaxed mb-4">Sur 100 clients/an, cela représente 7 100€ de marge brute. Notez bien : <strong class="text-slate-300">marge brute</strong>, pas marge nette. Il vous reste à déduire vos charges réelles.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Étape 4 : Déduire les charges réelles</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Charges typiques d'un revendeur IPTV en France (estimations) :</p>
+    <ul class="text-slate-400 text-sm space-y-1.5 list-disc ml-5 mb-6">
+      <li><strong class="text-slate-300">Frais paiement</strong> (Stripe, PayPal) : ~2,5–3 % du chiffre d'affaires</li>
+      <li><strong class="text-slate-300">Charges sociales</strong> (auto-entrepreneur) : ~22 % du CA déclaré</li>
+      <li><strong class="text-slate-300">Impôt sur le revenu</strong> : variable selon votre tranche</li>
+      <li><strong class="text-slate-300">Outils & marketing</strong> (site web, ads, hébergement) : 50–500€/mois selon ambition</li>
+      <li><strong class="text-slate-300">Temps consacré</strong> à la gestion clients (souvent sous-estimé)</li>
+    </ul>
+    <p class="text-slate-400 leading-relaxed mb-4">En pratique, sur 7 100€ de marge brute annuelle (100 clients), une fois les charges déduites, vous récupérez typiquement <strong class="text-slate-300">3 500–5 000€ net</strong> selon votre régime fiscal.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Étape 5 : Calculer votre point mort</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Le point mort est le nombre de clients à atteindre pour couvrir vos charges fixes mensuelles. Exemple :</p>
+    <div class="bg-[#0f1420] border border-white/10 rounded-2xl p-6 my-6">
+      <p class="text-sm font-mono text-amber-300 mb-2">Point mort mensuel = Charges fixes mensuelles ÷ Marge brute mensuelle par client</p>
+      <p class="text-slate-400 text-sm mb-2">Si vos charges fixes sont de 200€/mois et votre marge brute par client est de 5,90€/mois (71€/12) :</p>
+      <p class="text-slate-400 text-sm">200 ÷ 5,90 = <strong class="text-white">~34 clients actifs</strong> pour atteindre le break-even.</p>
+    </div>
+    <p class="text-slate-400 leading-relaxed mb-4">En-dessous de 34 clients dans cet exemple, vous travaillez à perte. Au-dessus, chaque client supplémentaire est du profit pur.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">Optimisation par les paliers de volume</h2>
+    <p class="text-slate-400 leading-relaxed mb-4">Passer du palier 10 au palier 100 vous économise environ 1,50€ par crédit. Sur un an avec 100 clients, c'est <strong class="text-slate-300">150€ de marge supplémentaire</strong> sans rien changer côté revente. Si vous savez que vous allez écouler 100 crédits dans les 6 mois, achetez en gros plutôt qu'à l'unité — votre marge nette suit mécaniquement.</p>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-white">À retenir</h2>
+    <ul class="text-slate-400 text-sm space-y-2 list-disc ml-5 mb-4">
+      <li>Marge brute = Prix de revente − Prix d'achat. Pas plus compliqué.</li>
+      <li>Marge nette ≈ 50–70 % de la marge brute, selon votre régime fiscal.</li>
+      <li>Acheter en volume baisse mécaniquement votre prix unitaire.</li>
+      <li>Le point mort se calcule sur les charges fixes mensuelles, pas annuelles.</li>
+      <li>La rétention vaut plus que l'acquisition : un client renouvelé pendant 3 ans rapporte 3× la marge brute initiale, sans coût de réacquisition.</li>
+    </ul>
+    <p class="text-slate-400 leading-relaxed mb-4">Pour un devis personnalisé adapté à votre volume estimé, <a href="/contact" class="text-amber-400 hover:text-amber-300">contactez-nous</a> ou consultez directement notre <a href="/tarifs-grossiste-iptv" class="text-amber-400 hover:text-amber-300">grille tarifaire publique</a>.</p>
+  </article>
+
+  <section class="max-w-3xl mx-auto px-6 py-12 reveal">
+    <div class="bg-gradient-to-br from-amber-900/20 to-rose-900/20 border border-amber-500/20 rounded-3xl p-8 text-center">
+      <h2 class="text-xl md:text-2xl font-bold mb-2">Simuler votre rentabilité personnalisée</h2>
+      <p class="text-slate-400 text-sm mb-6 max-w-md mx-auto">Donnez-nous votre volume mensuel cible et votre prix de revente — nous calculons votre marge.</p>
+      <a href="https://wa.me/212782389820?text=Bonjour%2C%20je%20veux%20simuler%20ma%20marge%20revendeur" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold px-7 py-3.5 rounded-xl text-sm" onclick="typeof gtag === 'function' && gtag('event', 'generate_lead', { event_category: 'whatsapp_contact', event_label: 'content_cta' });">
+        <WhatsAppIcon class="w-4 h-4" />
+        Simulation marge
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 pb-24 reveal">
+    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Lire aussi</h3>
+    <div class="grid md:grid-cols-2 gap-3">
+      <a href="/blog/comment-choisir-un-fournisseur-iptv-grossiste-fiable" class="bg-[#0f1420] border border-white/5 hover:border-emerald-500/20 rounded-xl p-5 transition-all">
+        <p class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">Revendeur IPTV</p>
+        <h4 class="text-sm font-bold text-white">Comment choisir un fournisseur IPTV grossiste fiable</h4>
+      </a>
+      <a href="/blog/panel-iptv-revendeur-fonctionnalites-indispensables" class="bg-[#0f1420] border border-white/5 hover:border-indigo-500/20 rounded-xl p-5 transition-all">
+        <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider mb-1">Panel IPTV</p>
+        <h4 class="text-sm font-bold text-white">Panel IPTV : les 10 fonctionnalités indispensables</h4>
+      </a>
+    </div>
+  </section>
+
+</SiteLayout>
